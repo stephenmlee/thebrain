@@ -1,0 +1,45 @@
+{
+  "id": 0,
+  "neurons": [
+    {
+      "innovation_number" : 1,
+      "label": "B1",
+      "type": "Bias"
+    },
+    {
+      "innovation_number" : 2,
+      "label": "O1",
+      "type": "Output"
+    },
+    {
+      "innovation_number" : 3,
+      "label": "S1",
+      "type": "Sensor"
+    },
+    {
+      "innovation_number" : 4,
+      "label": "S2",
+      "type": "Sensor"
+    }
+  ],
+  "synapses": [
+    {
+      "innovation_number" : 5,
+      "axon": "S1",
+      "dendrite": "O1",
+      "weight": 1
+    },
+    {
+      "innovation_number" : 6,
+      "axon": "S2",
+      "dendrite": "O1",
+      "weight": 1
+    },
+    {
+      "innovation_number" : 7,
+      "axon": "B1",
+      "dendrite": "O1",
+      "weight": 1
+    }
+  ]
+}

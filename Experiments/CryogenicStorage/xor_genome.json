@@ -1,0 +1,101 @@
+{
+  "id": 0,
+  "neurons": [
+    {
+      "innovation_number" : 1,
+      "label": "B1",
+      "type": "Bias"
+    },
+    {
+      "innovation_number" : 2,
+      "label": "B2",
+      "type": "Bias"
+    },
+    {
+      "innovation_number" : 3,
+      "label": "B3",
+      "type": "Bias"
+    },
+    {
+      "innovation_number" : 4,
+      "label": "H1",
+      "type": "Hidden"
+    },
+    {
+      "innovation_number" : 5,
+      "label": "H2",
+      "type": "Hidden"
+    },
+    {
+      "innovation_number" : 6,
+      "label": "O1",
+      "type": "Output"
+    },
+    {
+      "innovation_number" : 7,
+      "label": "S1",
+      "type": "Sensor"
+    },
+    {
+      "innovation_number" : 8,
+      "label": "S2",
+      "type": "Sensor"
+    }
+  ],
+  "synapses": [
+    {
+      "innovation_number" : 9,
+      "axon": "S1",
+      "dendrite": "H2",
+      "weight": -4.63
+    },
+    {
+      "innovation_number" : 10,
+      "axon": "S2",
+      "dendrite": "H2",
+      "weight": 4.6
+    },
+    {
+      "innovation_number" : 11,
+      "axon": "B2",
+      "dendrite": "H2",
+      "weight": -2.74
+    },
+    {
+      "innovation_number" : 12,
+      "axon": "S1",
+      "dendrite": "H1",
+      "weight": 4.83
+    },
+    {
+      "innovation_number" : 13,
+      "axon": "S2",
+      "dendrite": "H1",
+      "weight": -4.83
+    },
+    {
+      "innovation_number" : 14,
+      "axon": "B1",
+      "dendrite": "H1",
+      "weight": -2.82
+    },
+    {
+      "innovation_number" : 15,
+      "axon": "H1",
+      "dendrite": "O1",
+      "weight": 5.73
+    },
+    {
+      "innovation_number" : 16,
+      "axon": "H2",
+      "dendrite": "O1",
+      "weight": 5.83
+    },
+    {
+      "innovation_number" : 17,
+      "axon": "B3",
+      "dendrite": "O1",
+      "weight": -2.86
+    }
+  ]
+}
