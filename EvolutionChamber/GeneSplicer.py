@@ -37,7 +37,7 @@ class GeneSplicer(object):
                 else:
                     num_disjoint += 1
                     g2 += 1
-        b1 = 1
+
         return (DISJOINT_COEFF * (num_disjoint / max_genome_size) +
                 EXCESS_COEFF * (num_excess / max_genome_size)
                 + MUTATION_DIFF_COEFF * (mutation_difference / num_matching))
