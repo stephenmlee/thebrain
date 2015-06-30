@@ -4,7 +4,6 @@ from EvolutionChamber.Population import Population
 
 __author__ = 'stephen'
 
-
 class RunExperiment(unittest.TestCase):
     def test_create_initial_population(self):
         starting_genome = decode('Experiments/CryogenicStorage/minimal_genome.json')

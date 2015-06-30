@@ -8,3 +8,6 @@ class Species(object):
 
     def assimilate(self, organism):
         self.member_organisms.append(organism)
+
+    def max_fitness_organism(self):
+        return max(self.member_organisms, key=lambda o: o["fitness"])

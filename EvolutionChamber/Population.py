@@ -41,3 +41,6 @@ class Population(object):
 
             if not compatible:
                 self.species.append(Species(organism))
+
+    def max_fitness_species(self):
+        return max(self.species, key=lambda s: s.max_fitness_organism())
