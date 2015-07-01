@@ -46,4 +46,5 @@ class Population(object):
         return max(self.species, key=lambda s: s.max_fitness_organism())
 
     def EPOCH(self):
-        pass
+        for species in self.species:
+            species.adjust_fitness()
