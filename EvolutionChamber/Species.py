@@ -35,7 +35,7 @@ class Species(object):
 
             organism["adjusted_fitness"] /= len(self.member_organisms)
 
-        sorted(self.member_organisms, key=lambda f: f["adjusted_fitness"])
+        self.member_organisms = sorted(self.member_organisms, key=lambda f: f["adjusted_fitness"])
         survivors = int(math.floor(SURVIVAL_RATE * len(self.member_organisms) + 1))
         for doomed in self.member_organisms[survivors:]:
             doomed["marked_for_death"] = "Yes"
@@ -45,7 +45,5 @@ class Species(object):
         for organism in self.member_organisms:
             self.expected_children += organism["adjusted_fitness"] / average_fitness
 
-
-
-
-
+    def smite(self):
+        self.member_organisms = filter(lambda o: o.get("marked_for_death", "No") == "No", self.member_organisms)

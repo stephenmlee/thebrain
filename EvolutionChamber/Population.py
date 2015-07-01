@@ -60,6 +60,11 @@ class Population(object):
         missing_children = len(self.organisms) - math.floor(sum(s.expected_children for s in self.species))
         self.max_fitness_species().expected_children += missing_children
 
+        self.organisms = []
+        for species in self.species:
+            species.smite()
+            self.organisms.extend(species.member_organisms)
+
 
 
 
