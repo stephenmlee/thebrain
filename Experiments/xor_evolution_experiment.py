@@ -17,28 +17,38 @@ if __name__ == "__main__":
     starting_genome = decode('Experiments/CryogenicStorage/minimal_genome.json')
     population = Population(starting_genome)
 
-    for genome in population.organisms:
-        brain = NeuralNetwork.expressed_from(genome)
+    target_fitness = 3.9
+    best_fitness = 0
+    generation = 1
 
-        inputs = [[("S1", 0), ("S2", 0)], [("S1", 0), ("S2", 1)], [("S1", 1), ("S2", 0)], [("S1", 1), ("S2", 1)]]
+    while best_fitness < target_fitness:
 
-        desired_outputs = [0, 1, 1, 0]
-        actual_outputs = []
+        for genome in population.organisms:
+            brain = NeuralNetwork.expressed_from(genome)
 
-        try:
-            for sensory_input in inputs:
-                brain.stimulate(sensory_input)
-                brain.electrify()
-                actual_outputs.append(brain.outputs()["O1"].activation())
-            error = actual_outputs[0] + (1 - actual_outputs[1]) + (1 - actual_outputs[2]) + actual_outputs[3]
-            genome["fitness"] = 4 - error
+            inputs = [[("S1", 0), ("S2", 0)], [("S1", 0), ("S2", 1)], [("S1", 1), ("S2", 0)], [("S1", 1), ("S2", 1)]]
 
-        except UnstableNetworkError:
-            print genome["id"] + " is UNSTABLE!!!"
+            desired_outputs = [0, 1, 1, 0]
+            actual_outputs = []
 
-    organism = population.max_fitness_species().max_fitness_organism()
-    print "Max Fitness: Organism " + str(organism["id"]) + " with " + str(organism["fitness"])
-    print json.dumps(organism, indent=2)
+            try:
+                for sensory_input in inputs:
+                    brain.stimulate(sensory_input)
+                    brain.electrify()
+                    actual_outputs.append(brain.outputs()["O1"].activation())
+                error = actual_outputs[0] + (1 - actual_outputs[1]) + (1 - actual_outputs[2]) + actual_outputs[3]
+                genome["fitness"] = 4 - error
 
+            except UnstableNetworkError:
+                genome["fitness"] = 0
+                print genome["id"] + " is UNSTABLE!!!"
+
+        organism = population.max_fitness_species().max_fitness_organism()
+        print "Max Fitness: Organism " + str(organism["id"]) + " with " + str(organism["fitness"])
+        # print json.dumps(organism, indent=2)
+
+        print "===================== EPOCH %s =====================" % generation
+        population.EPOCH()
+        generation += 1
 
 
