@@ -18,11 +18,13 @@ class GeneSplicer(object):
         mutation_difference = 0
         max_genome_size = max(len(genes1), len(genes2))
 
-        for i in range(0, max_genome_size):
-            if g1 >= len(genes1):
+        while g1 < len(genes1) and g2 < len(genes2):
+            if g1 >= len(genes2):
                 num_excess += 1
-            elif g2 >= len(genes2):
+                g1 += 1
+            elif g2 >= len(genes1):
                 num_excess += 1
+                g2 += 1
             else:
                 innov1 = genes1[g1]["innovation_number"]
                 innov2 = genes2[g2]["innovation_number"]
