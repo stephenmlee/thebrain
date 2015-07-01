@@ -11,6 +11,7 @@ class Species(object):
         self.last_improvement = 0
         self.max_fitness = 0
         self.age = 0
+        self.expected_children = 0
 
     def assimilate(self, organism):
         self.member_organisms.append(organism)
@@ -38,6 +39,11 @@ class Species(object):
         survivors = int(math.floor(SURVIVAL_RATE * len(self.member_organisms) + 1))
         for doomed in self.member_organisms[survivors:]:
             doomed["marked_for_death"] = "Yes"
+
+    def calc_number_of_offspring(self, average_fitness):
+        self.expected_children = 0
+        for organism in self.member_organisms:
+            self.expected_children += organism["adjusted_fitness"] / average_fitness
 
 
 

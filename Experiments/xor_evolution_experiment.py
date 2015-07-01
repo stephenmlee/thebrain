@@ -1,4 +1,5 @@
 import json
+from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD
 from Cranium import NeuralNetwork
 from Cranium.NeuralNetwork import UnstableNetworkError
 from EvolutionChamber.Population import Population
@@ -53,10 +54,10 @@ if __name__ == "__main__":
             last_improvement = 0
         else:
             last_improvement += 1
-            if last_improvement > 9:
+            if last_improvement > AGE_DROPOFF_THRESHOLD + 5:
                 raise Exception("STAGNANT POPULATION")
 
-        print "===================== EPOCH %s =====================" % generation
+        print "===================== EPOCH %s ===================== - population %s" % (generation, len(population.organisms))
         population.EPOCH()
         generation += 1
 

@@ -1,5 +1,6 @@
 import copy
 import random
+import math
 from CommandBunker.ControlPanel import INITIAL_POPULATION_SIZE, WEIGHT_MUTATION_POWER, WEIGHT_MUTATION_TAIL_BOOST, \
     COMPATIBILITY_THRESHOLD
 from EvolutionChamber.GeneSplicer import GeneSplicer
@@ -48,3 +49,17 @@ class Population(object):
     def EPOCH(self):
         for species in self.species:
             species.adjust_fitness()
+
+        total_adjusted_fitness = 0
+        for organism in self.organisms:
+            total_adjusted_fitness += organism["adjusted_fitness"]
+        average_adjusted_fitness = total_adjusted_fitness / len(self.organisms)
+
+        for species in self.species:
+            species.calc_number_of_offspring(average_adjusted_fitness)
+        missing_children = len(self.organisms) - math.floor(sum(s.expected_children for s in self.species))
+        self.max_fitness_species().expected_children += missing_children
+
+
+
+
