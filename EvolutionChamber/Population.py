@@ -12,7 +12,6 @@ class Population(object):
     def __init__(self, starting_genome):
         self.organisms = [starting_genome]
         self.species = []
-        self.last_improvement = 0
 
         for count in range(1, INITIAL_POPULATION_SIZE):
             clone = copy.deepcopy(starting_genome)
@@ -47,6 +46,4 @@ class Population(object):
         return max(self.species, key=lambda s: s.max_fitness_organism())
 
     def EPOCH(self):
-        if self.last_improvement > 9:
-            raise Exception("STAGNANT POPULATION")
-        self.last_improvement += 1
+        pass

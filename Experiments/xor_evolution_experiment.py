@@ -20,6 +20,7 @@ if __name__ == "__main__":
     target_fitness = 3.9
     best_fitness = 0
     generation = 1
+    last_improvement = 0
 
     while best_fitness < target_fitness:
 
@@ -46,6 +47,14 @@ if __name__ == "__main__":
         organism = population.max_fitness_species().max_fitness_organism()
         print "Max Fitness: Organism " + str(organism["id"]) + " with " + str(organism["fitness"])
         # print json.dumps(organism, indent=2)
+
+        if organism["fitness"] > best_fitness:
+            best_fitness = organism["fitness"]
+            last_improvement = 0
+        else:
+            last_improvement += 1
+            if last_improvement > 9:
+                raise Exception("STAGNANT POPULATION")
 
         print "===================== EPOCH %s =====================" % generation
         population.EPOCH()
