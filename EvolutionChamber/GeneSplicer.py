@@ -43,3 +43,9 @@ class GeneSplicer(object):
         return (DISJOINT_COEFF * (num_disjoint / max_genome_size) +
                 EXCESS_COEFF * (num_excess / max_genome_size)
                 + MUTATION_DIFF_COEFF * (mutation_difference / num_matching))
+
+    def mate(self, mum, dad):
+        return dad
+
+    def mutate(self, junior):
+        pass
