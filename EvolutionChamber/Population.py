@@ -57,13 +57,18 @@ class Population(object):
 
         for species in self.species:
             species.calc_number_of_offspring(average_adjusted_fitness)
-        missing_children = len(self.organisms) - math.floor(sum(s.expected_children for s in self.species))
-        self.max_fitness_species().expected_children += missing_children
 
         self.organisms = []
         for species in self.species:
             species.smite()
             self.organisms.extend(species.member_organisms)
+
+        self.species = filter(lambda s: len(s.member_organisms) > 0, self.species)
+        if len(self.species)  == 0:
+            raise Exception("NO MORE SPECIES LEFT... THEY ALL DIED!")
+
+        missing_children = INITIAL_POPULATION_SIZE - math.floor(sum(s.expected_children for s in self.species))
+        self.max_fitness_species().expected_children += missing_children
 
 
 
