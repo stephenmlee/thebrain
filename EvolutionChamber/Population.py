@@ -17,16 +17,10 @@ class Population(object):
         for count in range(1, INITIAL_POPULATION_SIZE):
             clone = copy.deepcopy(starting_genome)
             clone["id"] = count
-            tail_index = 0.8 * len(clone["synapses"])
-            for index, synapse in enumerate(clone["synapses"]):
-                tail_boost = WEIGHT_MUTATION_TAIL_BOOST if index > tail_index else 1
-                synapse["weight"] += self.rand_pos_neg() * random.random() * WEIGHT_MUTATION_POWER * tail_boost
+            GeneSplicer().mutate(clone)
             self.organisms.append(clone)
 
         self.speciate()
-
-    def rand_pos_neg(self):
-        return -1 if random.randint(0, 1) == 0 else 1
 
     def speciate(self):
         splicer = GeneSplicer()

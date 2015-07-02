@@ -1,4 +1,8 @@
-from CommandBunker.ControlPanel import DISJOINT_COEFF, EXCESS_COEFF, MUTATION_DIFF_COEFF
+import random
+from CommandBunker.ControlPanel import DISJOINT_COEFF, EXCESS_COEFF, MUTATION_DIFF_COEFF, MUTATE_LINKS_PROBABILITY, \
+    DISABLE_GENE_PROBABILITY, REENABLE_GENE_PROBABILITY, ADD_NODE_PROBABILITY, ADD_LINK_PROBABILITY, \
+    WEIGHT_MUTATION_TAIL_BOOST, WEIGHT_MUTATION_POWER
+from EvolutionChamber import Randomiser
 
 __author__ = 'stephen'
 
@@ -48,4 +52,20 @@ class GeneSplicer(object):
         return dad
 
     def mutate(self, junior):
-        pass
+        if random.random() < MUTATE_LINKS_PROBABILITY:
+            tail_index = 0.8 * len(junior["synapses"])
+            for index, synapse in enumerate(junior["synapses"]):
+                tail_boost = WEIGHT_MUTATION_TAIL_BOOST if index > tail_index else 1
+                synapse["weight"] += Randomiser.rand_pos_neg() * random.random() * WEIGHT_MUTATION_POWER * tail_boost
+
+        if random.random() < DISABLE_GENE_PROBABILITY:
+            pass
+
+        if random.random() < REENABLE_GENE_PROBABILITY:
+            pass
+
+        if random.random() < ADD_NODE_PROBABILITY:
+            pass
+
+        if random.random() < ADD_LINK_PROBABILITY:
+            pass
