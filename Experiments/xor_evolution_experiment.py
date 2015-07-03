@@ -43,11 +43,10 @@ if __name__ == "__main__":
 
             except UnstableNetworkError:
                 genome["fitness"] = 0
-                print genome["id"] + " is UNSTABLE!!!"
+                print "%s is UNSTABLE!!!" % genome["id"]
 
         organism = population.max_fitness_species().max_fitness_organism()
         print "Max Fitness: Organism " + str(organism["id"]) + " with " + str(organism["fitness"])
-        # print json.dumps(organism, indent=2)
 
         if organism["fitness"] > best_fitness:
             best_fitness = organism["fitness"]
@@ -55,6 +54,7 @@ if __name__ == "__main__":
         else:
             last_improvement += 1
             if last_improvement > AGE_DROPOFF_THRESHOLD + 5:
+                print json.dumps(organism, indent=2)
                 raise Exception("STAGNANT POPULATION")
 
         print "===================== EPOCH %s ===================== - population %s" % (generation, len(population.organisms))

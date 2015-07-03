@@ -1,7 +1,9 @@
 import random
+from CommandBunker import ControlPanel
 from CommandBunker.ControlPanel import DISJOINT_COEFF, EXCESS_COEFF, MUTATION_DIFF_COEFF, MUTATE_LINKS_PROBABILITY, \
     DISABLE_GENE_PROBABILITY, REENABLE_GENE_PROBABILITY, ADD_NODE_PROBABILITY, ADD_LINK_PROBABILITY, \
     WEIGHT_MUTATION_TAIL_BOOST, WEIGHT_MUTATION_POWER
+from Cranium.Neuron import BIAS, HIDDEN
 from EvolutionChamber import Randomiser
 
 __author__ = 'stephen'
@@ -52,11 +54,6 @@ class GeneSplicer(object):
         return dad
 
     def mutate(self, junior):
-        if random.random() < MUTATE_LINKS_PROBABILITY:
-            tail_index = 0.8 * len(junior["synapses"])
-            for index, synapse in enumerate(junior["synapses"]):
-                tail_boost = WEIGHT_MUTATION_TAIL_BOOST if index > tail_index else 1
-                synapse["weight"] += Randomiser.rand_pos_neg() * random.random() * WEIGHT_MUTATION_POWER * tail_boost
 
         if random.random() < DISABLE_GENE_PROBABILITY:
             pass
@@ -65,7 +62,47 @@ class GeneSplicer(object):
             pass
 
         if random.random() < ADD_NODE_PROBABILITY:
-            pass
+            synapse_genes = junior["synapses"]
+            random_gene = synapse_genes[random.randint(0, len(synapse_genes) - 1)]
+
+            random_gene["disabled"] = "true"
+            old_dendrite = random_gene["dendrite"]
+            old_axon = random_gene["axon"]
+
+            new_neuron = self.new_neuron()
+            junior["neurons"].append(new_neuron)
+            junior["synapses"].append(self.new_synapse(old_axon, new_neuron["label"], 1))
+            junior["synapses"].append(self.new_synapse(new_neuron["label"], old_dendrite, random_gene["weight"]))
 
         if random.random() < ADD_LINK_PROBABILITY:
-            pass
+            neurons = junior["neurons"]
+            random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
+            random_neuron_2 = neurons[random.randint(0, len(neurons) - 1)]
+            junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
+
+        KRYPTONITE = 1
+        if random.random() < 0.1:
+            KRYPTONITE = 3
+
+        if random.random() < MUTATE_LINKS_PROBABILITY:
+            tail_index = 0.8 * len(junior["synapses"])
+            for index, synapse in enumerate(junior["synapses"]):
+                tail_boost = WEIGHT_MUTATION_TAIL_BOOST if index > tail_index else 1
+                synapse["weight"] += Randomiser.rand_pos_neg() * random.random() * WEIGHT_MUTATION_POWER  * tail_boost * KRYPTONITE
+
+
+    def new_neuron(self):
+        next_innovation_number = ControlPanel.next_innovation_number()
+        return {"innovation_number": next_innovation_number,
+                "label": "H%s" % next_innovation_number,
+                "type": HIDDEN
+                }
+
+    def new_synapse(self, axon, dendrite, weight):
+        next_innovation_number = ControlPanel.next_innovation_number()
+        return {
+            "innovation_number": next_innovation_number,
+            "axon": axon,
+            "dendrite": dendrite,
+            "weight": weight
+        }

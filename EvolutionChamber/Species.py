@@ -1,6 +1,7 @@
 import copy
 import math
 import random
+from CommandBunker import ControlPanel
 from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD, YOUNG_BOOST, SURVIVAL_RATE, MATE_PROBABILITY
 from EvolutionChamber.GeneSplicer import GeneSplicer
 
@@ -67,6 +68,7 @@ class Species(object):
                 junior = copy.deepcopy(mum)
 
             splicer.mutate(junior)
+            junior["id"] = ControlPanel.next_organism_number()
             self.member_organisms.append(junior)
 
         return []
