@@ -19,8 +19,8 @@ def decode(genome_file):
 def generate():
     n = 0
     while True:
-        yield "." if n % 2 == 0 else "|"
         n += 1
+        yield "." if n % 2 == 0 else "+"
 
 
 if __name__ == "__main__":
@@ -80,12 +80,13 @@ if __name__ == "__main__":
         last_species_id = 0
 
         population_map = ""
-        species_character = generate().next()
-        for sample in range(0, len(zoo), int(len(zoo) / 100)):
-            sampled_species_id = zoo[sample]
+        genorator = generate()
+        species_character = genorator.next()
+        for sample in range(0, 100):
+            sampled_species_id = zoo[int(sample*(len(zoo)/100))]
             if sampled_species_id != last_species_id:
                 last_species_id = sampled_species_id
-                species_character = generate().next()
+                species_character = genorator.next()
             population_map += species_character
         print population_map + " : EPOCH %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
         generation, len(population.organisms), len(population.species), organism["fitness"], organism["id"])

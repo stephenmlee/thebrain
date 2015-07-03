@@ -2,7 +2,8 @@ import copy
 import math
 import random
 from CommandBunker import ControlPanel
-from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD, YOUNG_BOOST, SURVIVAL_RATE, MATE_PROBABILITY
+from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD, YOUNG_BOOST, SURVIVAL_RATE, MATE_PROBABILITY, \
+    COMPATIBILITY_THRESHOLD
 from EvolutionChamber.GeneSplicer import GeneSplicer
 
 __author__ = 'stephen'
@@ -32,6 +33,8 @@ class Species(object):
             self.last_improvement += 1
 
         for organism in self.member_organisms:
+            organism["adjusted_fitness"] = organism["fitness"]
+
             if self.last_improvement > AGE_DROPOFF_THRESHOLD:
                 organism["adjusted_fitness"] = 0
 
@@ -41,14 +44,16 @@ class Species(object):
             organism["adjusted_fitness"] /= len(self.member_organisms)
 
         self.member_organisms = sorted(self.member_organisms, key=lambda f: f["adjusted_fitness"], reverse=True)
-        survivors = int(math.floor(SURVIVAL_RATE * len(self.member_organisms)))
+        survivors = int(math.floor(SURVIVAL_RATE * len(self.member_organisms))) + 1
         for doomed in self.member_organisms[survivors:]:
             doomed["marked_for_death"] = "Yes"
 
     def calc_number_of_offspring(self, average_fitness):
         self.expected_children = 0
         for organism in self.member_organisms:
-            self.expected_children += (organism["adjusted_fitness"] / average_fitness) * (1 - SURVIVAL_RATE)
+            if average_fitness > 0:
+                self.expected_children += (organism["adjusted_fitness"] / average_fitness) * (1 - SURVIVAL_RATE)
+        self.expected_children
 
     def smite(self):
         self.member_organisms = filter(lambda o: o.get("marked_for_death", "No") == "No", self.member_organisms)
@@ -56,6 +61,7 @@ class Species(object):
     def breed(self):
         splicer = GeneSplicer()
 
+        children = []
         for count in range(0, int(self.expected_children)):
             if count == 0:
                 mum = copy.deepcopy(self.member_organisms[count])
@@ -70,6 +76,13 @@ class Species(object):
 
             splicer.mutate(junior)
             junior["id"] = ControlPanel.next_organism_number()
-            self.member_organisms.append(junior)
+            children.append(junior)
 
-        return []
+        mutants = []
+        for child in children:
+            if splicer.compatibility_scan(self.representative, child) < COMPATIBILITY_THRESHOLD:
+                self.member_organisms.append(child)
+            else:
+                mutants.append(child)
+
+        return mutants

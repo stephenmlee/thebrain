@@ -2,7 +2,7 @@ import random
 from CommandBunker import ControlPanel
 from CommandBunker.ControlPanel import DISJOINT_COEFF, EXCESS_COEFF, MUTATION_DIFF_COEFF, MUTATE_LINKS_PROBABILITY, \
     DISABLE_GENE_PROBABILITY, REENABLE_GENE_PROBABILITY, ADD_NODE_PROBABILITY, ADD_LINK_PROBABILITY, \
-    WEIGHT_MUTATION_TAIL_BOOST, WEIGHT_MUTATION_POWER
+    WEIGHT_MUTATION_TAIL_BOOST, WEIGHT_MUTATION_POWER, RESET_WEIGHT_PROBABILITY
 from Cranium.Neuron import BIAS, HIDDEN
 from EvolutionChamber import Randomiser
 
@@ -54,6 +54,7 @@ class GeneSplicer(object):
         return dad
 
     def mutate(self, junior):
+        pass
 
         if random.random() < DISABLE_GENE_PROBABILITY:
             pass
@@ -88,8 +89,11 @@ class GeneSplicer(object):
             tail_index = 0.8 * len(junior["synapses"])
             for index, synapse in enumerate(junior["synapses"]):
                 tail_boost = WEIGHT_MUTATION_TAIL_BOOST if index > tail_index else 1
-                synapse["weight"] += Randomiser.rand_pos_neg() * random.random() * WEIGHT_MUTATION_POWER  * tail_boost * KRYPTONITE
-
+                new_weight = Randomiser.rand_pos_neg() * random.random() * WEIGHT_MUTATION_POWER * tail_boost * KRYPTONITE
+                if random.random() < RESET_WEIGHT_PROBABILITY:
+                    synapse["weight"] = new_weight
+                else:
+                    synapse["weight"] += new_weight
 
     def new_neuron(self):
         next_innovation_number = ControlPanel.next_innovation_number()

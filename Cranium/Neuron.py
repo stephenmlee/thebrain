@@ -39,7 +39,7 @@ class Neuron(object):
         return {"innovation_number": self.innovation_number, "label": self.label, "type": self.type}
 
     def _sigmoid(self, x):
-        return 1 / (1 + math.exp(-4.924273 * x))
+        return 1 / (1 + math.exp(-x))
 
 
 class SensorNeuron(Neuron):

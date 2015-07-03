@@ -63,10 +63,25 @@ class Population(object):
             int(s.expected_children) + len(s.member_organisms) for s in self.species)
         self.max_fitness_species().expected_children += missing_children
 
+        mutant_children = []
         for species in self.species:
-            mutant_children = species.breed()
+            mutant_children.extend(species.breed())
+
+        self.invaded_by(mutant_children)
 
         self.organisms = []
         for species in self.species:
-            species.smite()
             self.organisms.extend(species.member_organisms)
+            species.age +=1
+
+    def invaded_by(self, mutants):
+        lonesome_george = True
+        for mutant in mutants:
+            for species in self.species:
+                splicer = GeneSplicer()
+                if lonesome_george and splicer.compatibility_scan(species.representative,
+                                                                  mutant) < COMPATIBILITY_THRESHOLD:
+                    species.member_organisms.append(mutant)
+                    lonesome_george = False
+            if lonesome_george:
+                self.species.append(Species(mutant))
