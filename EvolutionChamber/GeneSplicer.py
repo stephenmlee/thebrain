@@ -5,6 +5,7 @@ from CommandBunker.ControlPanel import DISJOINT_COEFF, EXCESS_COEFF, MUTATION_DI
     WEIGHT_MUTATION_TAIL_BOOST, WEIGHT_MUTATION_POWER, RESET_WEIGHT_PROBABILITY
 from Cranium.Neuron import BIAS, HIDDEN
 from EvolutionChamber import Randomiser
+from EvolutionChamber.Randomiser import rand_pos_neg
 
 __author__ = 'stephen'
 
@@ -12,6 +13,73 @@ __author__ = 'stephen'
 class GeneSplicer(object):
     def __init__(self):
         pass
+
+    def mate(self, mum, dad):
+        mum_neurons = mum["neurons"]
+        dad_neurons = dad["neurons"]
+        mum_synapses = mum["synapses"]
+        dad_synapses = dad["synapses"]
+        better_fitness = mum if mum["fitness"] > dad["fitness"] else dad
+        junior_synapses = []
+        junior_neurons = {}
+        g1 = 0
+        g2 = 0
+        while g1 < len(mum_synapses) and g2 < len(dad_synapses):
+            if g1 >= len(dad_synapses):
+                if better_fitness is mum:
+                    junior_synapses.append(mum_synapses[g1])
+                    self.mum_neurons(g1, junior_neurons, mum_neurons, mum_synapses[g1])
+                g1 += 1
+            elif g2 >= len(dad_synapses):
+                if better_fitness is not mum:
+                    junior_synapses.append(dad_synapses[g2])
+                    self.add_dad_neurons(g2, dad_neurons, junior_neurons, dad_synapses[g2])
+                g2 += 1
+            else:
+                innov1 = mum_synapses[g1]["innovation_number"]
+                innov2 = dad_synapses[g2]["innovation_number"]
+                if innov1 == innov2:
+                    if rand_pos_neg() == 1:
+                        junior_synapses.append(mum_synapses[g1])
+                        self.mum_neurons(g1, junior_neurons, mum_neurons, mum_synapses[g1])
+
+                    else:
+                        junior_synapses.append(dad_synapses[g2])
+                        self.add_dad_neurons(g2, dad_neurons, junior_neurons, dad_synapses[g2])
+
+                    g1 += 1
+                    g2 += 1
+                elif innov1 < innov2:
+                    if better_fitness is mum:
+                        junior_synapses.append(mum_synapses[g1])
+                        self.mum_neurons(g1, junior_neurons, mum_neurons, mum_synapses[g1])
+                    g1 += 1
+                else:
+                    if better_fitness is not mum:
+                        junior_synapses.append(dad_synapses[g1])
+                        self.add_dad_neurons(g2, dad_neurons, junior_neurons, dad_synapses[g2])
+                    g2 += 1
+
+        junior = {"neurons": [], "synapses": []}
+
+        connections = set()
+        for i, synapse in enumerate(junior_synapses):
+            connection = synapse["axon"] + synapse["dendrite"]
+            if connection not in connections:
+                connections.add(connection)
+                junior["synapses"].append(synapse)
+        junior["neurons"].extend(junior_neurons.values())
+
+        return junior
+
+    def add_dad_neurons(self, g2, dad_neurons, junior_neurons, dad_synapses):
+        junior_neurons[dad_synapses["axon"]] = filter(lambda n: n["label"] == dad_synapses["axon"], dad_neurons)[0]
+        junior_neurons[dad_synapses["dendrite"]] = filter(lambda n: n["label"] == dad_synapses["dendrite"], dad_neurons)[0]
+
+    def mum_neurons(self, g1, junior_neurons, mum_neurons, mum_synapses):
+        junior_neurons[mum_synapses["axon"]] = filter(lambda n: n["label"] == mum_synapses["axon"], mum_neurons)[0]
+        junior_neurons[mum_synapses["dendrite"]] = filter(lambda n: n["label"] == mum_synapses["dendrite"], mum_neurons)[0]
+
 
     def compatibility_scan(self, genome1, genome2):
         genes1 = genome1["synapses"]
@@ -50,21 +118,22 @@ class GeneSplicer(object):
                 EXCESS_COEFF * (num_excess / max_genome_size)
                 + MUTATION_DIFF_COEFF * (mutation_difference / num_matching))
 
-    def mate(self, mum, dad):
-        return dad
+
 
     def mutate(self, junior):
-        pass
+        KRYPTONITE = 1
+        if random.random() < 0.01:
+            KRYPTONITE = 5
 
         if random.random() < DISABLE_GENE_PROBABILITY:
             synapse_genes = junior["synapses"]
             random_gene = synapse_genes[random.randint(0, len(synapse_genes) - 1)]
             random_gene["disabled"] = "true"
 
-        if random.random() < REENABLE_GENE_PROBABILITY:
+        elif random.random() < REENABLE_GENE_PROBABILITY:
             pass
 
-        if random.random() < ADD_NODE_PROBABILITY:
+        elif random.random() < ADD_NODE_PROBABILITY:
             synapse_genes = junior["synapses"]
             random_gene = synapse_genes[random.randint(0, len(synapse_genes) - 1)]
 
@@ -78,18 +147,14 @@ class GeneSplicer(object):
                 junior["synapses"].append(self.new_synapse(old_axon, new_neuron["label"], 1))
                 junior["synapses"].append(self.new_synapse(new_neuron["label"], old_dendrite, random_gene["weight"]))
 
-        if random.random() < ADD_LINK_PROBABILITY:
+        elif random.random() < ADD_LINK_PROBABILITY:
             neurons = junior["neurons"]
             random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
             random_neuron_2 = neurons[random.randint(0, len(neurons) - 1)]
             if random_neuron_1["type"] not in ["Output"] and random_neuron_2["type"] not in ["Sensor", "Bias"]:
                 junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
 
-        KRYPTONITE = 1
-        if random.random() < 0.01:
-            KRYPTONITE = 5
-
-        if random.random() < MUTATE_LINKS_PROBABILITY:
+        elif random.random() < MUTATE_LINKS_PROBABILITY:
             tail_index = 0.8 * len(junior["synapses"])
             for index, synapse in enumerate(junior["synapses"]):
                 tail_boost = WEIGHT_MUTATION_TAIL_BOOST if index > tail_index else 1
@@ -99,12 +164,14 @@ class GeneSplicer(object):
                 else:
                     synapse["weight"] += new_weight
 
+
     def new_neuron(self):
         next_innovation_number = ControlPanel.next_innovation_number()
         return {"innovation_number": next_innovation_number,
                 "label": "H%s" % next_innovation_number,
                 "type": HIDDEN
                 }
+
 
     def new_synapse(self, axon, dendrite, weight):
         next_innovation_number = ControlPanel.next_innovation_number()

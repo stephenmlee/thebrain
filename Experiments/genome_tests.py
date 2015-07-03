@@ -29,6 +29,17 @@ class RunExperiment(unittest.TestCase):
         splicer = GeneSplicer()
         self.assertEqual(splicer.compatibility_scan(genome1, genome2), 0.2664)
 
+    def test_mating(self):
+        genome1 = self.read_genome('CryogenicStorage/xor_genome.json')
+        genome2 = self.read_genome('CryogenicStorage/xor_genome.json')
+
+        del genome1["synapses"][2]
+        del genome2["synapses"][6:9]
+        genome2["synapses"][3]["weight"] = 1.5
+
+        splicer = GeneSplicer()
+        print json.dumps(splicer.mate(genome1, genome2),indent=2)
+
     def read_genome(self, genome_file):
         f = open(genome_file, 'r')
         expected_genome = json.load(f)
