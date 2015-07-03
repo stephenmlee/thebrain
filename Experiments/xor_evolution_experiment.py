@@ -1,4 +1,6 @@
 import json
+import thread
+import time
 from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD
 from Cranium import NeuralNetwork
 from Cranium.NeuralNetwork import UnstableNetworkError
@@ -12,6 +14,13 @@ def decode(genome_file):
     g = json.load(f)
     f.close()
     return g
+
+
+def generate():
+    n = 0
+    while True:
+        yield "." if n % 2 == 0 else "|"
+        n += 1
 
 
 if __name__ == "__main__":
@@ -46,19 +55,37 @@ if __name__ == "__main__":
                 print "%s is UNSTABLE!!!" % genome["id"]
 
         organism = population.max_fitness_species().max_fitness_organism()
-        print "Max Fitness: Organism " + str(organism["id"]) + " with " + str(organism["fitness"])
 
         if organism["fitness"] > best_fitness:
             best_fitness = organism["fitness"]
             last_improvement = 0
         else:
             last_improvement += 1
-            if last_improvement > AGE_DROPOFF_THRESHOLD + 5:
+            if last_improvement > AGE_DROPOFF_THRESHOLD * 3:
                 print json.dumps(organism, indent=2)
+                time.sleep(1)
                 raise Exception("STAGNANT POPULATION")
 
-        print "===================== EPOCH %s ===================== - population %s" % (generation, len(population.organisms))
+        zoo = []
+        for species in population.species:
+            zoo.extend(species.id for x in range(0, len(species.member_organisms)))
+
         population.EPOCH()
         generation += 1
 
+        zoo = []
+        for species in population.species:
+            zoo.extend(species.id for x in range(0, len(species.member_organisms)))
 
+        last_species_id = 0
+
+        population_map = ""
+        species_character = generate().next()
+        for sample in range(0, len(zoo), int(len(zoo) / 100)):
+            sampled_species_id = zoo[sample]
+            if sampled_species_id != last_species_id:
+                last_species_id = sampled_species_id
+                species_character = generate().next()
+            population_map += species_character
+        print population_map + " : EPOCH %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
+        generation, len(population.organisms), len(population.species), organism["fitness"], organism["id"])

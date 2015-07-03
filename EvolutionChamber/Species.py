@@ -10,6 +10,7 @@ __author__ = 'stephen'
 
 class Species(object):
     def __init__(self, representative):
+        self.id = ControlPanel.next_species_id()
         self.representative = representative
         self.member_organisms = [representative]
         self.last_improvement = 0
