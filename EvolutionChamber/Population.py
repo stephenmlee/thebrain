@@ -2,7 +2,7 @@ import copy
 import random
 import math
 from CommandBunker.ControlPanel import INITIAL_POPULATION_SIZE, WEIGHT_MUTATION_POWER, WEIGHT_MUTATION_TAIL_BOOST, \
-    COMPATIBILITY_THRESHOLD
+    COMPATIBILITY_THRESHOLD, AGE_DROPOFF_THRESHOLD
 from EvolutionChamber.GeneSplicer import GeneSplicer
 from EvolutionChamber.Species import Species
 
@@ -55,9 +55,10 @@ class Population(object):
         for species in self.species:
             species.smite()
 
-        self.species = filter(lambda s: len(s.member_organisms) > 0, self.species)
-        if len(self.species) == 0:
-            raise Exception("NO MORE SPECIES LEFT... THEY ALL DIED!")
+        if len(self.species) > 1:
+            self.species = filter(lambda s: len(s.member_organisms) > 0 and s.last_improvement < AGE_DROPOFF_THRESHOLD, self.species)
+            if len(self.species) == 0:
+                raise Exception("NO MORE SPECIES LEFT... THEY ALL DIED!")
 
         missing_children = INITIAL_POPULATION_SIZE - sum(
             int(s.expected_children) + len(s.member_organisms) for s in self.species)

@@ -81,7 +81,7 @@ def expressed_from(genome):
             network.add_output_node(innov_num, label)
 
     for gene in genome["synapses"]:
-        if gene.get("disabled") is not None:
+        if gene.get("disabled") is None:
             network.connect(gene["innovation_number"], gene["axon"], gene["dendrite"], gene["weight"])
 
     return network

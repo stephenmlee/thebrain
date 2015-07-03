@@ -57,7 +57,9 @@ class GeneSplicer(object):
         pass
 
         if random.random() < DISABLE_GENE_PROBABILITY:
-            pass
+            synapse_genes = junior["synapses"]
+            random_gene = synapse_genes[random.randint(0, len(synapse_genes) - 1)]
+            random_gene["disabled"] = "true"
 
         if random.random() < REENABLE_GENE_PROBABILITY:
             pass
@@ -66,24 +68,26 @@ class GeneSplicer(object):
             synapse_genes = junior["synapses"]
             random_gene = synapse_genes[random.randint(0, len(synapse_genes) - 1)]
 
-            random_gene["disabled"] = "true"
             old_dendrite = random_gene["dendrite"]
             old_axon = random_gene["axon"]
 
-            new_neuron = self.new_neuron()
-            junior["neurons"].append(new_neuron)
-            junior["synapses"].append(self.new_synapse(old_axon, new_neuron["label"], 1))
-            junior["synapses"].append(self.new_synapse(new_neuron["label"], old_dendrite, random_gene["weight"]))
+            if old_axon[:1] in ["S", "H"]:
+                random_gene["disabled"] = "true"
+                new_neuron = self.new_neuron()
+                junior["neurons"].append(new_neuron)
+                junior["synapses"].append(self.new_synapse(old_axon, new_neuron["label"], 1))
+                junior["synapses"].append(self.new_synapse(new_neuron["label"], old_dendrite, random_gene["weight"]))
 
         if random.random() < ADD_LINK_PROBABILITY:
             neurons = junior["neurons"]
             random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
             random_neuron_2 = neurons[random.randint(0, len(neurons) - 1)]
-            junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
+            if random_neuron_1["type"] not in ["Output"] and random_neuron_2["type"] not in ["Sensor", "Bias"]:
+                junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
 
         KRYPTONITE = 1
-        if random.random() < 0.1:
-            KRYPTONITE = 3
+        if random.random() < 0.01:
+            KRYPTONITE = 5
 
         if random.random() < MUTATE_LINKS_PROBABILITY:
             tail_index = 0.8 * len(junior["synapses"])

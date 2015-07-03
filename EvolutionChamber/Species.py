@@ -35,7 +35,7 @@ class Species(object):
         for organism in self.member_organisms:
             organism["adjusted_fitness"] = organism["fitness"]
 
-            if self.last_improvement > AGE_DROPOFF_THRESHOLD:
+            if self.last_improvement > AGE_DROPOFF_THRESHOLD and self.max_fitness > organism["fitness"]:
                 organism["adjusted_fitness"] = 0
 
             if self.age <= 10:

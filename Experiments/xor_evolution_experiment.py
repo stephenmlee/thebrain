@@ -1,6 +1,7 @@
 import json
 import thread
 import time
+import math
 from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD
 from Cranium import NeuralNetwork
 from Cranium.NeuralNetwork import UnstableNetworkError
@@ -27,7 +28,7 @@ if __name__ == "__main__":
     starting_genome = decode('Experiments/CryogenicStorage/minimal_genome.json')
     population = Population(starting_genome)
 
-    target_fitness = 3.9
+    target_fitness = math.pow(3.9,2)
     best_fitness = 0
     generation = 1
     last_improvement = 0
@@ -48,11 +49,11 @@ if __name__ == "__main__":
                     brain.electrify()
                     actual_outputs.append(brain.outputs()["O1"].activation())
                 error = actual_outputs[0] + (1 - actual_outputs[1]) + (1 - actual_outputs[2]) + actual_outputs[3]
-                genome["fitness"] = 4 - error
+                genome["fitness"] = math.pow(4 - error, 2)
 
             except UnstableNetworkError:
                 genome["fitness"] = 0
-                print "%s is UNSTABLE!!!" % genome["id"]
+                #print "%s is UNSTABLE!!!" % genome["id"]
 
         organism = population.max_fitness_species().max_fitness_organism()
 
@@ -61,7 +62,7 @@ if __name__ == "__main__":
             last_improvement = 0
         else:
             last_improvement += 1
-            if last_improvement > AGE_DROPOFF_THRESHOLD * 3:
+            if last_improvement > AGE_DROPOFF_THRESHOLD * 100:
                 print json.dumps(organism, indent=2)
                 time.sleep(1)
                 raise Exception("STAGNANT POPULATION")
@@ -90,3 +91,5 @@ if __name__ == "__main__":
             population_map += species_character
         print population_map + " : EPOCH %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
         generation, len(population.organisms), len(population.species), organism["fitness"], organism["id"])
+
+    print json.dumps(population.max_fitness_species().max_fitness_organism())
