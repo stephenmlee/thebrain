@@ -71,7 +71,7 @@ class Species(object):
             if count == 0:
                 mum = copy.deepcopy(self.member_organisms[count])
             else:
-                mum = self.member_organisms[random.randint(0, len(self.member_organisms) - 1)]
+                mum = copy.deepcopy(self.member_organisms[random.randint(0, len(self.member_organisms) - 1)])
 
             if random.random() < MATE_PROBABILITY:
                 dad = copy.deepcopy(self.member_organisms[random.randint(0, len(self.member_organisms) - 1)])
@@ -82,6 +82,7 @@ class Species(object):
             junior["id"] = ControlPanel.next_organism_number()
             junior["generation"] = generation
             junior["species"] = self.id
+            junior["parent"] = mum["id"]
             children.append(junior)
 
         mutants = []

@@ -101,13 +101,14 @@ if __name__ == "__main__":
             population_map += species_character
         snapshot = population_map + " : Generation %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
         generation, len(population.organisms), len(population.species), champ["fitness"], champ["id"])
+
         print snapshot
         timeline.write(snapshot)
         timeline.write('\n')
+        archive_population(population, generation)
 
         if best_fitness > target_fitness:
             print json.dumps(population.max_fitness_species().max_fitness_organism())
         else:
-            archive_population(population, generation)
             population.EPOCH(generation)
             generation += 1
