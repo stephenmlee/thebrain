@@ -73,12 +73,20 @@ class GeneSplicer(object):
         return junior
 
     def add_dad_neurons(self, g2, dad_neurons, junior_neurons, dad_synapses):
-        junior_neurons[dad_synapses["axon"]] = filter(lambda n: n["label"] == dad_synapses["axon"], dad_neurons)[0]
-        junior_neurons[dad_synapses["dendrite"]] = filter(lambda n: n["label"] == dad_synapses["dendrite"], dad_neurons)[0]
+        axons = filter(lambda n: n["label"] == dad_synapses["axon"], dad_neurons)
+        if len(axons) > 0:
+            junior_neurons[dad_synapses["axon"]] = axons[0]
+        dendrites = filter(lambda n: n["label"] == dad_synapses["dendrite"], dad_neurons)
+        if len(dendrites) > 0:
+            junior_neurons[dad_synapses["dendrite"]] = dendrites[0]
 
     def mum_neurons(self, g1, junior_neurons, mum_neurons, mum_synapses):
-        junior_neurons[mum_synapses["axon"]] = filter(lambda n: n["label"] == mum_synapses["axon"], mum_neurons)[0]
-        junior_neurons[mum_synapses["dendrite"]] = filter(lambda n: n["label"] == mum_synapses["dendrite"], mum_neurons)[0]
+        axons = filter(lambda n: n["label"] == mum_synapses["axon"], mum_neurons)
+        if len(axons) > 0:
+            junior_neurons[mum_synapses["axon"]] = axons[0]
+        dendrites = filter(lambda n: n["label"] == mum_synapses["dendrite"], mum_neurons)
+        if len(dendrites) > 0:
+            junior_neurons[mum_synapses["dendrite"]] = dendrites[0]
 
 
     def compatibility_scan(self, genome1, genome2):

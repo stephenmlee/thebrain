@@ -11,7 +11,9 @@ class RunExperiment(unittest.TestCase ):
         brain.stimulate([("S1", 0),
                          ("S2", 0)])
         brain.electrify()
-        self.assertLess(brain.outputs()["O1"].activation(), 0.1)
+        activation = brain.outputs()["O1"].activation()
+        self.assertLess(activation, 0.1)
+        print "0, 0: %s" % activation
 
     def test_output_is_one_when_s1_is_one(self):
         genome = decode('CryogenicStorage/xor_genome.json')
@@ -19,7 +21,9 @@ class RunExperiment(unittest.TestCase ):
         brain.stimulate([("S1", 1),
                          ("S2", 0)])
         brain.electrify()
-        self.assertGreater(brain.outputs()["O1"].activation(), 0.9)
+        activation = brain.outputs()["O1"].activation()
+        self.assertGreater(activation, 0.9)
+        print "0, 1: %s" % activation
 
     def test_output_is_one_when_s2_is_one(self):
         genome = decode('CryogenicStorage/xor_genome.json')
@@ -27,7 +31,9 @@ class RunExperiment(unittest.TestCase ):
         brain.stimulate([("S1", 1),
                          ("S2", 0)])
         brain.electrify()
-        self.assertGreater(brain.outputs()["O1"].activation(), 0.1)
+        activation = brain.outputs()["O1"].activation()
+        self.assertGreater(activation, 0.1)
+        print "1, 0: %s" % activation
 
     def test_output_is_zero_when_both_inputs_are_one(self):
         genome = decode('CryogenicStorage/xor_genome.json')
@@ -35,7 +41,9 @@ class RunExperiment(unittest.TestCase ):
         brain.stimulate([("S1", 1),
                          ("S2", 1)])
         brain.electrify()
-        self.assertLess(brain.outputs()["O1"].activation(), 0.9)
+        activation = brain.outputs()["O1"].activation()
+        self.assertLess(activation, 0.9)
+        print "1, 1: %s" % activation
 
 def decode(genome_file):
     f = open(genome_file, 'r')
