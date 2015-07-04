@@ -44,8 +44,10 @@ if __name__ == "__main__":
 
     archive = "Experiments/Archive/xor/%s" % datetime.datetime.now().strftime("%Y%m%d %H:%M:%S")
     os.makedirs(archive)
-
     archive_population(population, generation)
+
+    timeline_path = "%s/timeline.txt" % archive
+    timeline = open(timeline_path, "w")
 
     while best_fitness < target_fitness:
 
@@ -97,8 +99,11 @@ if __name__ == "__main__":
                 last_species_id = sampled_species_id
                 species_character = generator.next()
             population_map += species_character
-        print population_map + " : Generation %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
-            generation, len(population.organisms), len(population.species), champ["fitness"], champ["id"])
+        snapshot = population_map + " : Generation %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
+        generation, len(population.organisms), len(population.species), champ["fitness"], champ["id"])
+        print snapshot
+        timeline.write(snapshot)
+        timeline.write('\n')
 
         if best_fitness > target_fitness:
             print json.dumps(population.max_fitness_species().max_fitness_organism())
