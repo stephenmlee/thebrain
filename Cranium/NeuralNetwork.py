@@ -41,8 +41,11 @@ class NeuralNetwork(object):
         self.neurons[label] = OutputNeuron(innov_num, label)
 
     def connect(self, innovation_number, source, receiver, weight):
-        synapse = Synapse(innovation_number, weight, self.neurons[source], self.neurons[receiver])
-        self.neurons[receiver].splice_dendrite_to(synapse)
+        try:
+            synapse = Synapse(innovation_number, weight, self.neurons[source], self.neurons[receiver])
+            self.neurons[receiver].splice_dendrite_to(synapse)
+        except KeyError:
+            pass
 
     def relaxed(self):
         for neuron in self.neurons.itervalues():

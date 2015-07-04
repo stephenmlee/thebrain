@@ -28,7 +28,7 @@ if __name__ == "__main__":
     starting_genome = decode('Experiments/CryogenicStorage/minimal_genome.json')
     population = Population(starting_genome)
 
-    target_fitness = math.pow(3.9,2)
+    target_fitness = math.pow(3.99,2)
     best_fitness = 0
     generation = 1
     last_improvement = 0
@@ -36,6 +36,7 @@ if __name__ == "__main__":
     while best_fitness < target_fitness:
 
         for genome in population.organisms:
+            genome["champ"] = None
             brain = NeuralNetwork.expressed_from(genome)
 
             inputs = [[("S1", 0), ("S2", 0)], [("S1", 0), ("S2", 1)], [("S1", 1), ("S2", 0)], [("S1", 1), ("S2", 1)]]
@@ -55,15 +56,20 @@ if __name__ == "__main__":
                 genome["fitness"] = 0
                 #print "%s is UNSTABLE!!!" % genome["id"]
 
-        organism = population.max_fitness_species().max_fitness_organism()
+        champ_species = population.max_fitness_species()
+        champ = champ_species.max_fitness_organism()
+        champ["champ"] = "Champion"
 
-        if organism["fitness"] > best_fitness:
-            best_fitness = organism["fitness"]
+        if champ["fitness"] > best_fitness:
+            best_fitness = champ["fitness"]
+            if best_fitness > target_fitness:
+                    print json.dumps(population.max_fitness_species().max_fitness_organism())
+
             last_improvement = 0
         else:
             last_improvement += 1
             if last_improvement > AGE_DROPOFF_THRESHOLD * 100:
-                print json.dumps(organism, indent=2)
+                print json.dumps(champ, indent=2)
                 time.sleep(1)
                 raise Exception("STAGNANT POPULATION")
 
@@ -90,6 +96,5 @@ if __name__ == "__main__":
                 species_character = genorator.next()
             population_map += species_character
         print population_map + " : EPOCH %s -- Population: %s, Species: %s, Max Fitness: %s (%s)," % (
-        generation, len(population.organisms), len(population.species), organism["fitness"], organism["id"])
+        generation, len(population.organisms), len(population.species), champ["fitness"], champ["id"])
 
-    print json.dumps(population.max_fitness_species().max_fitness_organism())

@@ -60,7 +60,7 @@ class GeneSplicer(object):
                         self.add_dad_neurons(g2, dad_neurons, junior_neurons, dad_synapses[g2])
                     g2 += 1
 
-        junior = {"neurons": [], "synapses": []}
+        junior = {"id" : ControlPanel.next_organism_number(), "fitness": mum["fitness"], "neurons": [], "synapses": []}
 
         connections = set()
         for i, synapse in enumerate(junior_synapses):
@@ -151,7 +151,13 @@ class GeneSplicer(object):
             neurons = junior["neurons"]
             random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
             random_neuron_2 = neurons[random.randint(0, len(neurons) - 1)]
-            if random_neuron_1["type"] not in ["Output"] and random_neuron_2["type"] not in ["Sensor", "Bias"]:
+
+            link_exists = False
+            for synapse in junior["synapses"]:
+                if synapse["axon"] == random_neuron_1["label"] and synapse["dendrite"] == random_neuron_2["label"]:
+                    link_exists = True
+
+            if not link_exists and random_neuron_1["type"] not in ["Output"] and random_neuron_2["type"] not in ["Sensor", "Bias"]:
                 junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
 
         elif random.random() < MUTATE_LINKS_PROBABILITY:

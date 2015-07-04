@@ -56,7 +56,9 @@ class Population(object):
             species.smite()
 
         if len(self.species) > 1:
-            self.species = filter(lambda s: len(s.member_organisms) > 0 and s.last_improvement < AGE_DROPOFF_THRESHOLD, self.species)
+            self.species = filter(lambda s: (len(
+                s.member_organisms) > 0 and s.last_improvement < AGE_DROPOFF_THRESHOLD) or s.haschamp(),
+                                  self.species)
             if len(self.species) == 0:
                 raise Exception("NO MORE SPECIES LEFT... THEY ALL DIED!")
 
@@ -73,7 +75,7 @@ class Population(object):
         self.organisms = []
         for species in self.species:
             self.organisms.extend(species.member_organisms)
-            species.age +=1
+            species.age += 1
 
     def invaded_by(self, mutants):
         lonesome_george = True

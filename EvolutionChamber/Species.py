@@ -56,7 +56,12 @@ class Species(object):
         self.expected_children
 
     def smite(self):
-        self.member_organisms = filter(lambda o: o.get("marked_for_death", "No") == "No", self.member_organisms)
+        self.member_organisms = filter(
+            lambda o: o.get("marked_for_death", "No") == "No" or o.get("champ", None) == "Champion",
+            self.member_organisms)
+
+    def haschamp(self):
+        return len(filter(lambda o: o.get("champ", None) == "Champion", self.member_organisms)) > 0
 
     def breed(self):
         splicer = GeneSplicer()

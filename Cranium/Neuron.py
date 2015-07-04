@@ -14,15 +14,15 @@ class Neuron(object):
         self.label = label
         self.type = type
         self.dendrites = []
-        self.incoming_activation = None
-        self.outgoing_activation = None
-        self.prior_outgoing_activation = None
+        self.incoming_activation = 0
+        self.outgoing_activation = 0
+        self.prior_outgoing_activation = 0
 
     def splice_dendrite_to(self, synapse):
         self.dendrites.append(synapse)
 
     def is_relaxed(self):
-        return self.outgoing_activation == self.prior_outgoing_activation
+        return abs(self.outgoing_activation - self.prior_outgoing_activation) < 0.00000001
 
     def load(self):
         self.incoming_activation = sum([synapse.weighted_activation() for synapse in self.dendrites
