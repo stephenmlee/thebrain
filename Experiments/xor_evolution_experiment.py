@@ -109,5 +109,5 @@ if __name__ == "__main__":
             print json.dumps(population.max_fitness_species().max_fitness_organism())
         else:
             archive_population(population, generation)
-            population.EPOCH()
+            population.EPOCH(generation)
             generation += 1

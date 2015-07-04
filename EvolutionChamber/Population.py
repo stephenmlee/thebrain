@@ -38,9 +38,9 @@ class Population(object):
                 self.species.append(Species(organism))
 
     def max_fitness_species(self):
-        return max(self.species, key=lambda s: s.max_fitness_organism())
+        return max(self.species, key=lambda s: s.max_fitness_organism()["fitness"])
 
-    def EPOCH(self):
+    def EPOCH(self, generation):
         for species in self.species:
             species.adjust_fitness()
 
@@ -68,7 +68,7 @@ class Population(object):
 
         mutant_children = []
         for species in self.species:
-            mutant_children.extend(species.breed())
+            mutant_children.extend(species.breed(generation))
 
         self.invaded_by(mutant_children)
 

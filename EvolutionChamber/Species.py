@@ -63,7 +63,7 @@ class Species(object):
     def haschamp(self):
         return len(filter(lambda o: o.get("champ", None) == "Champion", self.member_organisms)) > 0
 
-    def breed(self):
+    def breed(self, generation):
         splicer = GeneSplicer()
 
         children = []
@@ -78,9 +78,10 @@ class Species(object):
                 junior = splicer.mate(mum, dad)
             else:
                 junior = copy.deepcopy(mum)
-
-            splicer.mutate(junior)
+                splicer.mutate(junior)
             junior["id"] = ControlPanel.next_organism_number()
+            junior["generation"] = generation
+            junior["species"] = self.id
             children.append(junior)
 
         mutants = []
