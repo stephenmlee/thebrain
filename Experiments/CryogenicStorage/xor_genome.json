@@ -1,1 +1,76 @@
-{"adjusted_fitness": 0.24041264190686953, "parent": 4934, "generation": 25, "species": 3, "neurons": [{"innovation_number": 233, "type": "Hidden", "label": "H233"}, {"innovation_number": 4, "type": "Sensor", "label": "S2"}, {"innovation_number": 3, "type": "Sensor", "label": "S1"}, {"innovation_number": 2, "type": "Output", "label": "O1"}, {"innovation_number": 802, "type": "Hidden", "label": "H802"}], "synapses": [{"axon": "S1", "dendrite": "O1", "innovation_number": 5, "weight": -7.509534690708994, "disabled": "true"}, {"axon": "S2", "dendrite": "O1", "innovation_number": 6, "weight": -8.62346450954136}, {"axon": "S1", "dendrite": "H233", "innovation_number": 234, "weight": -7.337091875265598}, {"axon": "H233", "dendrite": "O1", "innovation_number": 235, "disabled": "true", "weight": 13.659157159473391}, {"axon": "H233", "dendrite": "H802", "innovation_number": 803, "weight": 1}, {"axon": "H802", "dendrite": "O1", "innovation_number": 804, "weight": 13.659157159473391}], "fitness": 15.998834125069655, "champ": "Champion", "id": 5165}
+{
+    "adjusted_fitness": 0.18627363455905058, 
+    "parent": 7497, 
+    "generation": 38, 
+    "species": 2, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 843, 
+        "type": "Hidden", 
+        "label": "H843"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 6.50998399279603
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": -4.531338356087176
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.30620646664352136
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 8.19923868552143
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H843", 
+        "innovation_number": 844, 
+        "weight": -2.3388551596041247
+      }, 
+      {
+        "axon": "H843", 
+        "dendrite": "H164", 
+        "innovation_number": 845, 
+        "weight": 0.7093529583312881
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 15.994650651474881, 
+    "champ": "Champion", 
+    "id": 7899
+  }
