@@ -4,13 +4,13 @@ __author__ = 'stephen'
 
 
 def main():
-    target_id = 15104
-    generation = 74
+    target_id = 7899
+    generation = 39
 
-    experiment_archive = "Archive/xor/20150704 22:22:46/generation"
+    experiment_archive = "Archive/xor/20150705 09:47:47/generation"
     lineage = []
 
-    while generation > 1:
+    while generation >= 1:
         historical_record = open("%s-%s.json" % (experiment_archive, generation), "r")
         genes = json.load(historical_record)
         historical_record.close()
@@ -18,10 +18,10 @@ def main():
         target = filter(lambda g: g["id"] == target_id, genes)[0]
         lineage.append(target)
 
-        target_id = target["parent"]
-        generation = target["generation"]
+        target_id = target.get("parent", "")
+        generation = target.get("generation", 0)
 
-    print json.dumps(sorted(lineage, key=lambda o: o["generation"]))
+    print json.dumps(sorted(lineage, key=lambda o: o.get("generation", 0)))
 
 
 if __name__ == "__main__":

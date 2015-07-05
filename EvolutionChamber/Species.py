@@ -76,9 +76,12 @@ class Species(object):
             if random.random() < MATE_PROBABILITY:
                 dad = copy.deepcopy(self.member_organisms[random.randint(0, len(self.member_organisms) - 1)])
                 junior = splicer.mate(mum, dad)
+                junior["reproduction"] = "Mate"
             else:
                 junior = copy.deepcopy(mum)
                 splicer.mutate(junior)
+                junior["reproduction"] = "Mutate"
+
             junior["id"] = ControlPanel.next_organism_number()
             junior["generation"] = generation
             junior["species"] = self.id

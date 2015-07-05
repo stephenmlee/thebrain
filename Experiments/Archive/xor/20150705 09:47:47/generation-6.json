@@ -1,0 +1,8722 @@
+[
+  {
+    "adjusted_fitness": 0.09320553438077894, 
+    "parent": 54, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "champ": "Champion", 
+    "reproduction": "Mutate", 
+    "fitness": 13.980830157116841, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 3.064408034609779
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": -0.8386442772973584
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.39037645514752106
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 3.0378139235678456
+      }
+    ], 
+    "id": 469
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999961, 
+    "parent": 506, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }, 
+      {
+        "innovation_number": 255, 
+        "type": "Hidden", 
+        "label": "H255"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H255", 
+        "innovation_number": 256, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H255", 
+        "dendrite": "O1", 
+        "innovation_number": 257, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999999941, 
+    "champ": null, 
+    "id": 657
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999937, 
+    "parent": 438, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999999906, 
+    "champ": null, 
+    "id": 765
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999937, 
+    "parent": 438, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999999906, 
+    "champ": null, 
+    "id": 788
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999671, 
+    "parent": 287, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999999506, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 3.418174542050935
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.2884788945653414
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.260197221029312
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.184636515140017
+      }
+    ], 
+    "id": 658
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999595, 
+    "parent": 484, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 5.156931818814458
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999999392, 
+    "champ": null, 
+    "id": 697
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999979785, 
+    "parent": 438, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 273, 
+        "type": "Hidden", 
+        "label": "H273"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999996968, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "disabled": "true", 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H273", 
+        "innovation_number": 274, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H273", 
+        "dendrite": "H183", 
+        "innovation_number": 275, 
+        "weight": 1
+      }
+    ], 
+    "id": 815
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999979396, 
+    "parent": 232, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999999691, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "id": 438
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999979396, 
+    "parent": 438, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.893018824125355, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.99999999999691, 
+    "champ": null, 
+    "id": 699
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999953424, 
+    "parent": 431, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 261, 
+        "type": "Hidden", 
+        "label": "H261"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5887213146350962
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 5.624402743191178
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H261", 
+        "innovation_number": 262, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H261", 
+        "dendrite": "O1", 
+        "innovation_number": 263, 
+        "weight": 5.624402743191178
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999993014, 
+    "champ": null, 
+    "id": 715
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999962113, 
+    "parent": 375, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999943169, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 2.3384523049912502
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 5.156931818814458
+      }
+    ], 
+    "id": 484
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999962113, 
+    "parent": 484, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.3384523049912502, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 5.156931818814458
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999943169, 
+    "champ": null, 
+    "id": 622
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999390215, 
+    "parent": 532, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 270, 
+        "type": "Hidden", 
+        "label": "H270"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.653929199912999
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 5.095458606624927
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H270", 
+        "innovation_number": 271, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H270", 
+        "dendrite": "O1", 
+        "innovation_number": 272, 
+        "weight": 5.095458606624927
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999908532, 
+    "champ": null, 
+    "id": 802
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999913509, 
+    "parent": 484, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999870264, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.5896437523553735
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 1.7337819714733926
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 3.2475860979433846
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 6.794740261031478
+      }
+    ], 
+    "id": 800
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999906454, 
+    "parent": 506, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.1421493071452415
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8787853360519327, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.213803049129454
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 4.97915575208851
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999985968, 
+    "champ": null, 
+    "id": 680
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772678, 
+    "parent": 446, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999659018, 
+    "champ": null, 
+    "id": 662
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772669, 
+    "parent": 287, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999659003, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.846637658333163
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "disabled": "true", 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "id": 446
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772669, 
+    "parent": 446, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999659003, 
+    "champ": null, 
+    "id": 640
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772669, 
+    "parent": 446, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999659003, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.846637658333163
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "disabled": "true", 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "id": 647
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999681943, 
+    "parent": 432, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 267, 
+        "type": "Hidden", 
+        "label": "H267"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5483810928067268
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 4.7574093420302885
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H267", 
+        "innovation_number": 268, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H267", 
+        "dendrite": "O1", 
+        "innovation_number": 269, 
+        "weight": 4.7574093420302885
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999522915, 
+    "champ": null, 
+    "id": 797
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 287, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999997457927, 
+    "champ": null, 
+    "id": 453
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 453, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999997457927, 
+    "champ": null, 
+    "id": 746
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 453, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.7157119313751155
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999997457927, 
+    "champ": null, 
+    "id": 792
+  }, 
+  {
+    "adjusted_fitness": 0.05999999997877712, 
+    "parent": 601, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.345854776201975
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.979929974594071
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999996816568, 
+    "champ": null, 
+    "id": 766
+  }, 
+  {
+    "adjusted_fitness": 0.059999999963547664, 
+    "parent": 248, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 234, 
+        "type": "Hidden", 
+        "label": "H234"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H234", 
+        "innovation_number": 235, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H234", 
+        "dendrite": "O1", 
+        "innovation_number": 236, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999453215, 
+    "champ": null, 
+    "id": 533
+  }, 
+  {
+    "adjusted_fitness": 0.059999999963547664, 
+    "parent": 601, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 264, 
+        "type": "Hidden", 
+        "label": "H264"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H264", 
+        "innovation_number": 265, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H264", 
+        "dendrite": "O1", 
+        "innovation_number": 266, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999453215, 
+    "champ": null, 
+    "id": 755
+  }, 
+  {
+    "adjusted_fitness": 0.0599999999624248, 
+    "parent": 282, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 237, 
+        "type": "Hidden", 
+        "label": "H237"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H237", 
+        "innovation_number": 238, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H237", 
+        "dendrite": "O1", 
+        "innovation_number": 239, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999436372, 
+    "champ": null, 
+    "id": 545
+  }, 
+  {
+    "adjusted_fitness": 0.0599999999624248, 
+    "parent": 186, 
+    "generation": 3, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 243, 
+        "type": "Hidden", 
+        "label": "H243"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999436372, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H243", 
+        "innovation_number": 244, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H243", 
+        "dendrite": "O1", 
+        "innovation_number": 245, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "id": 566
+  }, 
+  {
+    "adjusted_fitness": 0.05999999995484452, 
+    "parent": 601, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.187554287517413
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.994544252485834
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999993226679, 
+    "champ": null, 
+    "id": 767
+  }, 
+  {
+    "adjusted_fitness": 0.05999999991005727, 
+    "parent": 287, 
+    "generation": 4, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999986508591, 
+    "champ": null, 
+    "id": 761
+  }, 
+  {
+    "adjusted_fitness": 0.059999999907784804, 
+    "parent": 13, 
+    "generation": 2, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999998616772, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.846637658333163
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "id": 287
+  }, 
+  {
+    "parent": 469, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.064408034609779, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.39037645514752106
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 3.0378139235678456
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.241987670619949, 
+    "champ": null, 
+    "id": 820
+  }, 
+  {
+    "parent": 446, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.99999998616772, 
+    "champ": null, 
+    "id": 822
+  }, 
+  {
+    "parent": 715, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.624402743191178, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 824
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 453, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.593151406789141, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.2126792328545781
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 1.4341421111713435
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.502375908183007
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999763938778, 
+    "champ": null, 
+    "id": 825
+  }, 
+  {
+    "adjusted_fitness": 0.05999999991005727, 
+    "parent": 761, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 276, 
+        "type": "Hidden", 
+        "label": "H276"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H276", 
+        "innovation_number": 277, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H276", 
+        "dendrite": "O1", 
+        "innovation_number": 278, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999985694792, 
+    "champ": null, 
+    "id": 826
+  }, 
+  {
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 828
+  }, 
+  {
+    "parent": 566, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.345854776201975
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.979929974594071
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999996816568, 
+    "champ": null, 
+    "id": 830
+  }, 
+  {
+    "parent": 658, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.418174542050935, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.260197221029312
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.184636515140017
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.99999999406623, 
+    "champ": null, 
+    "id": 832
+  }, 
+  {
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 834
+  }, 
+  {
+    "parent": 802, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.653929199912999
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.095458606624927, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 836
+  }, 
+  {
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 9.0, 
+    "champ": null, 
+    "id": 838
+  }, 
+  {
+    "parent": 765, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.975756019133637, 
+    "champ": null, 
+    "id": 840
+  }, 
+  {
+    "parent": 761, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 842
+  }, 
+  {
+    "adjusted_fitness": 0.09320553438077894, 
+    "parent": 469, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.998726748218267, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 3.338212207196584
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.0050146305509544
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1.1387167848958097
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 1.8194466611035423
+      }
+    ], 
+    "id": 843
+  }, 
+  {
+    "parent": 622, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.3384523049912502, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 5.156931818814458
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999943169, 
+    "champ": null, 
+    "id": 845
+  }, 
+  {
+    "parent": 792, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 2.3384523049912502
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 847
+  }, 
+  {
+    "adjusted_fitness": 0.059999999963547664, 
+    "parent": 755, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 264, 
+        "type": "Hidden", 
+        "label": "H264"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.04462632221021
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.5060273260318935
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H264", 
+        "innovation_number": 265, 
+        "weight": 2.243907710736307
+      }, 
+      {
+        "axon": "H264", 
+        "dendrite": "O1", 
+        "innovation_number": 266, 
+        "weight": 3.0727424372141323
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999998389493284, 
+    "champ": null, 
+    "id": 848
+  }, 
+  {
+    "parent": 699, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999996584743, 
+    "champ": null, 
+    "id": 850
+  }, 
+  {
+    "parent": 622, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.187554287517413
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 2.3384523049912502
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 852
+  }, 
+  {
+    "parent": 658, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.653929199912999
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.095458606624927, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.260197221029312
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.184636515140017
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999998537934095, 
+    "champ": null, 
+    "id": 854
+  }, 
+  {
+    "parent": 697, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.7157119313751155
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 856
+  }, 
+  {
+    "adjusted_fitness": 0.05999999991005727, 
+    "parent": 761, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999986508591, 
+    "champ": null, 
+    "id": 857
+  }, 
+  {
+    "parent": 566, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 859
+  }, 
+  {
+    "parent": 792, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 861
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999937, 
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "disabled": "true", 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999999906, 
+    "champ": null, 
+    "id": 862
+  }, 
+  {
+    "parent": 287, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 864
+  }, 
+  {
+    "adjusted_fitness": 0.059999999907784804, 
+    "parent": 287, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999890267494, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 1.1465157430167814
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 0.48398465363738397
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 3.397103527591052
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.268421362665484
+      }
+    ], 
+    "id": 865
+  }, 
+  {
+    "parent": 697, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 5.156931818814458
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999981639595841, 
+    "champ": null, 
+    "id": 867
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999681943, 
+    "parent": 797, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 267, 
+        "type": "Hidden", 
+        "label": "H267"
+      }, 
+      {
+        "innovation_number": 279, 
+        "type": "Hidden", 
+        "label": "H279"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5483810928067268
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 4.7574093420302885
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H267", 
+        "innovation_number": 268, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H267", 
+        "dendrite": "O1", 
+        "innovation_number": 269, 
+        "disabled": "true", 
+        "weight": 4.7574093420302885
+      }, 
+      {
+        "axon": "H267", 
+        "dendrite": "H279", 
+        "innovation_number": 280, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H279", 
+        "dendrite": "O1", 
+        "innovation_number": 281, 
+        "weight": 4.7574093420302885
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999521284, 
+    "champ": null, 
+    "id": 868
+  }, 
+  {
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999764539329, 
+    "champ": null, 
+    "id": 870
+  }, 
+  {
+    "parent": 800, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.5896437523553735
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 3.2475860979433846
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 6.794740261031478
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999870283, 
+    "champ": null, 
+    "id": 872
+  }, 
+  {
+    "parent": 792, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "disabled": "true", 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999954779864952, 
+    "champ": null, 
+    "id": 874
+  }, 
+  {
+    "parent": 715, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5887213146350962
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.624402743191178, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.39037645514752106
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 876
+  }, 
+  {
+    "parent": 545, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 237, 
+        "type": "Hidden", 
+        "label": "H237"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H237", 
+        "innovation_number": 238, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H237", 
+        "dendrite": "O1", 
+        "innovation_number": 239, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.99999999436372, 
+    "champ": null, 
+    "id": 878
+  }, 
+  {
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999698392197727, 
+    "champ": null, 
+    "id": 880
+  }, 
+  {
+    "parent": 287, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5483810928067268
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.7574093420302885, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 882
+  }, 
+  {
+    "parent": 697, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999764539329, 
+    "champ": null, 
+    "id": 884
+  }, 
+  {
+    "parent": 658, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.418174542050935, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.184636515140017
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999998537934095, 
+    "champ": null, 
+    "id": 886
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772678, 
+    "parent": 662, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999659018, 
+    "champ": null, 
+    "id": 887
+  }, 
+  {
+    "parent": 715, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 261, 
+        "type": "Hidden", 
+        "label": "H261"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5887213146350962
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H261", 
+        "innovation_number": 262, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H261", 
+        "dendrite": "O1", 
+        "innovation_number": 263, 
+        "weight": 5.624402743191178
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999999877, 
+    "champ": null, 
+    "id": 889
+  }, 
+  {
+    "parent": 647, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.187554287517413
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.998210534480203, 
+    "champ": null, 
+    "id": 891
+  }, 
+  {
+    "parent": 446, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999954779864952, 
+    "champ": null, 
+    "id": 893
+  }, 
+  {
+    "parent": 815, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 895
+  }, 
+  {
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.39037645514752106
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 897
+  }, 
+  {
+    "parent": 715, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.418174542050935, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.624402743191178, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.260197221029312
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 899
+  }, 
+  {
+    "parent": 792, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 901
+  }, 
+  {
+    "parent": 755, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 903
+  }, 
+  {
+    "parent": 800, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.7337819714733926, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 905
+  }, 
+  {
+    "parent": 446, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 907
+  }, 
+  {
+    "parent": 767, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.187554287517413
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.994544252485834
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999993226679, 
+    "champ": null, 
+    "id": 909
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 746, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.37891194194251, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": -0.9973502535434788
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 0.9910451763903094
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.038787913251905
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999715674674542, 
+    "champ": null, 
+    "id": 910
+  }, 
+  {
+    "parent": 647, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.653929199912999
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.998210449135634, 
+    "champ": null, 
+    "id": 912
+  }, 
+  {
+    "parent": 657, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999229802, 
+    "champ": null, 
+    "id": 914
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772669, 
+    "parent": 647, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999995954985, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 3.516117507568711
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.462386921813764
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "disabled": "true", 
+        "weight": 2.7486764185914963
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.325200559444991
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 2.369211810186443
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 0.966600173911621
+      }
+    ], 
+    "id": 915
+  }, 
+  {
+    "parent": 545, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "disabled": "true", 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 917
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999979396, 
+    "parent": 699, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }, 
+      {
+        "innovation_number": 282, 
+        "type": "Hidden", 
+        "label": "H282"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.893018824125355, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H282", 
+        "innovation_number": 283, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H282", 
+        "dendrite": "O1", 
+        "innovation_number": 284, 
+        "weight": 2.893018824125355
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 9.0, 
+    "champ": null, 
+    "id": 918
+  }, 
+  {
+    "parent": 658, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.418174542050935, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.2884788945653414
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.260197221029312
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 6.184636515140017
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999999506, 
+    "champ": null, 
+    "id": 920
+  }, 
+  {
+    "adjusted_fitness": 0.05999999997877712, 
+    "parent": 766, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 285, 
+        "type": "Hidden", 
+        "label": "H285"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.345854776201975
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.979929974594071
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H285", 
+        "innovation_number": 286, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H285", 
+        "dendrite": "O1", 
+        "innovation_number": 287, 
+        "weight": 4.345854776201975
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999996441764, 
+    "champ": null, 
+    "id": 921
+  }, 
+  {
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 923
+  }, 
+  {
+    "parent": 761, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.1421493071452415
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 3.8787853360519327
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 925
+  }, 
+  {
+    "parent": 797, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 267, 
+        "type": "Hidden", 
+        "label": "H267"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5483810928067268
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.7574093420302885, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H267", 
+        "innovation_number": 268, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H267", 
+        "dendrite": "O1", 
+        "innovation_number": 269, 
+        "weight": 4.7574093420302885
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999522915, 
+    "champ": null, 
+    "id": 927
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999961, 
+    "parent": 657, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }, 
+      {
+        "innovation_number": 255, 
+        "type": "Hidden", 
+        "label": "H255"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.0717793809625817
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.732705257769128, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 0.6014391258886005
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 3.830907997378807
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H255", 
+        "innovation_number": 256, 
+        "weight": 0.7266935173183957
+      }, 
+      {
+        "axon": "H255", 
+        "dendrite": "O1", 
+        "innovation_number": 257, 
+        "weight": 3.25666639478847
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.99999999919206, 
+    "champ": null, 
+    "id": 928
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999937, 
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.4431472773709761
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": -0.44533517758161123
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 0.20775412301341523
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 3.5269580964344383, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 0.5246381671776903
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 4.810542151777048
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1.4070108042967873
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 3.9710364474673785
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999999996, 
+    "champ": null, 
+    "id": 929
+  }, 
+  {
+    "parent": 662, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.187554287517413
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.994544252485834
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999993226679, 
+    "champ": null, 
+    "id": 931
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999999961, 
+    "parent": 657, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }, 
+      {
+        "innovation_number": 255, 
+        "type": "Hidden", 
+        "label": "H255"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.366035784897458
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.536194532131008, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 1.013201547886859
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 3.699978704918359
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H255", 
+        "innovation_number": 256, 
+        "weight": 0.2281323174051444
+      }, 
+      {
+        "axon": "H255", 
+        "dendrite": "O1", 
+        "innovation_number": 257, 
+        "weight": 4.041650951637771
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999999973, 
+    "champ": null, 
+    "id": 932
+  }, 
+  {
+    "parent": 566, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 934
+  }, 
+  {
+    "parent": 453, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.7157119313751155
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999997457927, 
+    "champ": null, 
+    "id": 936
+  }, 
+  {
+    "parent": 622, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 2.3384523049912502
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 5.156931818814458
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999943169, 
+    "champ": null, 
+    "id": 938
+  }, 
+  {
+    "parent": 469, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.064408034609779, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": -0.8386442772973584
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 940
+  }, 
+  {
+    "parent": 767, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.994544252485834
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999990425815188, 
+    "champ": null, 
+    "id": 942
+  }, 
+  {
+    "parent": 566, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 243, 
+        "type": "Hidden", 
+        "label": "H243"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H243", 
+        "innovation_number": 244, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H243", 
+        "dendrite": "O1", 
+        "innovation_number": 245, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.99999999436372, 
+    "champ": null, 
+    "id": 944
+  }, 
+  {
+    "parent": 797, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.7574093420302885, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 946
+  }, 
+  {
+    "adjusted_fitness": 0.0599999999624248, 
+    "parent": 566, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 243, 
+        "type": "Hidden", 
+        "label": "H243"
+      }
+    ], 
+    "champ": null, 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999999547, 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.8507853816377438
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.937353263683594
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H243", 
+        "innovation_number": 244, 
+        "weight": 1.808146114540645
+      }, 
+      {
+        "axon": "H243", 
+        "dendrite": "O1", 
+        "innovation_number": 245, 
+        "weight": 6.1403873009769825
+      }
+    ], 
+    "id": 947
+  }, 
+  {
+    "parent": 792, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7157119313751155, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 2.3384523049912502
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 949
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 792, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.390527980308575
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.642950000710899
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 0.2626736788431252
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 3.521260852000782
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999992606916889, 
+    "champ": null, 
+    "id": 950
+  }, 
+  {
+    "parent": 800, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.5896437523553735
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.97338841656917, 
+    "champ": null, 
+    "id": 952
+  }, 
+  {
+    "parent": 658, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.418174542050935, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.2884788945653414
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 954
+  }, 
+  {
+    "parent": 715, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.624402743191178, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 956
+  }, 
+  {
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 958
+  }, 
+  {
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999999906, 
+    "champ": null, 
+    "id": 960
+  }, 
+  {
+    "parent": 800, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.5896437523553735
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.7337819714733926, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 3.2475860979433846
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 6.794740261031478
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999870264, 
+    "champ": null, 
+    "id": 962
+  }, 
+  {
+    "parent": 755, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 964
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999962113, 
+    "parent": 622, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.6547841623278434
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.9072767185888555, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 3.367377525515737
+      }, 
+      {
+        "axon": "H207", 
+        "dendrite": "O1", 
+        "innovation_number": 209, 
+        "weight": 3.24444972716282
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999304493649, 
+    "champ": null, 
+    "id": 965
+  }, 
+  {
+    "parent": 545, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 967
+  }, 
+  {
+    "adjusted_fitness": 0.05999999995484452, 
+    "parent": 767, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 5.889050768589076
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.35869643728721
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999997136205, 
+    "champ": null, 
+    "id": 968
+  }, 
+  {
+    "parent": 640, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 970
+  }, 
+  {
+    "adjusted_fitness": 0.05999999999772669, 
+    "parent": 640, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8266334384361436, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 0.8944868949501319
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 3.9398781372776757, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.164380877377866
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 2.4843688564739526
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 3.012126635540113
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999992546858, 
+    "champ": null, 
+    "id": 971
+  }, 
+  {
+    "parent": 657, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.994544252485834
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999990425815188, 
+    "champ": null, 
+    "id": 973
+  }, 
+  {
+    "parent": 647, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 3.8787853360519327
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 975
+  }, 
+  {
+    "parent": 800, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 1.5896437523553735
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.7337819714733926, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 977
+  }, 
+  {
+    "adjusted_fitness": 0.059999999963547664, 
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 234, 
+        "type": "Hidden", 
+        "label": "H234"
+      }, 
+      {
+        "innovation_number": 288, 
+        "type": "Hidden", 
+        "label": "H288"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H234", 
+        "innovation_number": 235, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H234", 
+        "dendrite": "O1", 
+        "innovation_number": 236, 
+        "weight": 4.258014392526247
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H288", 
+        "innovation_number": 289, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H288", 
+        "dendrite": "O1", 
+        "innovation_number": 290, 
+        "weight": 4.258014392526247
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 9.0, 
+    "champ": null, 
+    "id": 978
+  }, 
+  {
+    "parent": 699, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.653929199912999
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.095458606624927, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "disabled": "true", 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999977119, 
+    "champ": null, 
+    "id": 980
+  }, 
+  {
+    "parent": 453, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.7157119313751155
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.016610728419411
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999997457927, 
+    "champ": null, 
+    "id": 982
+  }, 
+  {
+    "parent": 761, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999986508591, 
+    "champ": null, 
+    "id": 984
+  }, 
+  {
+    "parent": 755, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "disabled": "true", 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 986
+  }, 
+  {
+    "parent": 715, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.5887213146350962
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.624402743191178, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 988
+  }, 
+  {
+    "parent": 622, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.975765112362124, 
+    "champ": null, 
+    "id": 990
+  }, 
+  {
+    "parent": 453, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.975755786848879, 
+    "champ": null, 
+    "id": 992
+  }, 
+  {
+    "parent": 438, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999996989, 
+    "champ": null, 
+    "id": 994
+  }, 
+  {
+    "parent": 815, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 273, 
+        "type": "Hidden", 
+        "label": "H273"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.624402743191178, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H273", 
+        "innovation_number": 274, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H273", 
+        "dendrite": "H183", 
+        "innovation_number": 275, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999991324, 
+    "champ": null, 
+    "id": 996
+  }, 
+  {
+    "parent": 469, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": -0.8386442772973584
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.39037645514752106
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 3.0378139235678456
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.797824710044054, 
+    "champ": null, 
+    "id": 998
+  }, 
+  {
+    "adjusted_fitness": 0.059999999999390215, 
+    "parent": 802, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 270, 
+        "type": "Hidden", 
+        "label": "H270"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.2402331059054426
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 5.910161932401493
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H270", 
+        "innovation_number": 271, 
+        "weight": 1.1282653703038938
+      }, 
+      {
+        "axon": "H270", 
+        "dendrite": "O1", 
+        "innovation_number": 272, 
+        "weight": 6.495330749172023
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999999988903, 
+    "champ": null, 
+    "id": 999
+  }, 
+  {
+    "parent": 800, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1001
+  }, 
+  {
+    "parent": 469, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": -0.39037645514752106
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 3.0378139235678456
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.241988521260724, 
+    "champ": null, 
+    "id": 1003
+  }, 
+  {
+    "parent": 815, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 273, 
+        "type": "Hidden", 
+        "label": "H273"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.7337819714733926, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "O1", 
+        "innovation_number": 166, 
+        "weight": 2.8972827543140447, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H183", 
+        "innovation_number": 184, 
+        "weight": 1, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H183", 
+        "dendrite": "O1", 
+        "innovation_number": 185, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H222", 
+        "innovation_number": 223, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H222", 
+        "dendrite": "O1", 
+        "innovation_number": 224, 
+        "weight": 2.8972827543140447
+      }, 
+      {
+        "axon": "H164", 
+        "dendrite": "H273", 
+        "innovation_number": 274, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H273", 
+        "dendrite": "H183", 
+        "innovation_number": 275, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999991324, 
+    "champ": null, 
+    "id": 1005
+  }, 
+  {
+    "parent": 446, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.99821034328976, 
+    "champ": null, 
+    "id": 1007
+  }, 
+  {
+    "parent": 766, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.345854776201975
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 3.8787853360519327
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1009
+  }, 
+  {
+    "parent": 788, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.1183388376152188
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.975755786848879, 
+    "champ": null, 
+    "id": 1011
+  }, 
+  {
+    "parent": 802, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.998200970874022, 
+    "champ": null, 
+    "id": 1013
+  }, 
+  {
+    "adjusted_fitness": 0.059999999963547664, 
+    "parent": 755, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 264, 
+        "type": "Hidden", 
+        "label": "H264"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 3.6580167968436994
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.046776496751151
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H264", 
+        "innovation_number": 265, 
+        "weight": 1.5102589267671607
+      }, 
+      {
+        "axon": "H264", 
+        "dendrite": "O1", 
+        "innovation_number": 266, 
+        "weight": 3.641376387196208
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999868915198, 
+    "champ": null, 
+    "id": 1014
+  }, 
+  {
+    "parent": 533, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 222, 
+        "type": "Hidden", 
+        "label": "H222"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 164, 
+        "type": "Hidden", 
+        "label": "H164"
+      }, 
+      {
+        "innovation_number": 183, 
+        "type": "Hidden", 
+        "label": "H183"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "disabled": "true", 
+        "weight": 2.893018824125355
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 3.8359901932091844
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H164", 
+        "innovation_number": 165, 
+        "weight": 1
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1016
+  }, 
+  {
+    "parent": 767, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.187554287517413
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.979929974594071
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999993217351, 
+    "champ": null, 
+    "id": 1018
+  }, 
+  {
+    "parent": 566, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 2.803701678305086
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1020
+  }, 
+  {
+    "parent": 647, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 228, 
+        "type": "Hidden", 
+        "label": "H228"
+      }, 
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.846637658333163, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 2.204952342751853, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.790846803589632
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H228", 
+        "innovation_number": 229, 
+        "weight": 1
+      }, 
+      {
+        "axon": "H228", 
+        "dendrite": "H158", 
+        "innovation_number": 230, 
+        "weight": 2.204952342751853
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 8.999999999659003, 
+    "champ": null, 
+    "id": 1022
+  }, 
+  {
+    "parent": 797, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }, 
+      {
+        "innovation_number": 207, 
+        "type": "Hidden", 
+        "label": "H207"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.4984226957750932
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 4.7574093420302885, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "H207", 
+        "innovation_number": 208, 
+        "weight": 2.1220237035900107
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1024
+  }, 
+  {
+    "parent": 755, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 4.258014392526247, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6484166222437084
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1026
+  }, 
+  {
+    "parent": 765, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 2.7106967519312937
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "disabled": "true", 
+        "weight": 3.8359901932091844
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1028
+  }, 
+  {
+    "adjusted_fitness": 0.059999999983052846, 
+    "parent": 746, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 158, 
+        "type": "Hidden", 
+        "label": "H158"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.441212108320876, 
+        "disabled": "true"
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 1.6185746571001827
+      }, 
+      {
+        "axon": "S1", 
+        "dendrite": "H158", 
+        "innovation_number": 159, 
+        "weight": 3.2759954032216876
+      }, 
+      {
+        "axon": "H158", 
+        "dendrite": "O1", 
+        "innovation_number": 160, 
+        "weight": 4.012560405486146
+      }
+    ], 
+    "reproduction": "Mutate", 
+    "fitness": 8.999999878075172, 
+    "champ": null, 
+    "id": 1029
+  }, 
+  {
+    "parent": 802, 
+    "generation": 5, 
+    "species": 1, 
+    "neurons": [
+      {
+        "innovation_number": 4, 
+        "type": "Sensor", 
+        "label": "S2"
+      }, 
+      {
+        "innovation_number": 3, 
+        "type": "Sensor", 
+        "label": "S1"
+      }, 
+      {
+        "innovation_number": 2, 
+        "type": "Output", 
+        "label": "O1"
+      }
+    ], 
+    "synapses": [
+      {
+        "axon": "S1", 
+        "dendrite": "O1", 
+        "innovation_number": 5, 
+        "weight": 3.653929199912999
+      }, 
+      {
+        "axon": "S2", 
+        "dendrite": "O1", 
+        "innovation_number": 6, 
+        "weight": 5.095458606624927, 
+        "disabled": "true"
+      }
+    ], 
+    "reproduction": "Mate", 
+    "fitness": 6.25, 
+    "champ": null, 
+    "id": 1031
+  }
+]
