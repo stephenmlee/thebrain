@@ -1,7 +1,5 @@
 import json
 import os
-import thread
-import time
 import math
 import datetime
 from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD
@@ -82,6 +80,7 @@ if __name__ == "__main__":
         else:
             last_improvement += 1
             if last_improvement > AGE_DROPOFF_THRESHOLD * 2:
+                print json.dumps(population.max_fitness_species().max_fitness_organism())
                 raise Exception("STAGNANT POPULATION")
 
         zoo = []

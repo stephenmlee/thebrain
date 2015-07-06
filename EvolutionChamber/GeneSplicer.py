@@ -21,7 +21,8 @@ class GeneSplicer(object):
         dad_synapses = dad["synapses"]
         better_fitness = mum if mum["fitness"] > dad["fitness"] else dad
         junior_synapses = []
-        junior_neurons = {}
+        junior_neurons = {mum_neuron["label"]: mum_neuron for mum_neuron in mum_neurons if
+                          mum_neuron["label"][0] != "H"}
         g1 = 0
         g2 = 0
         while g1 < len(mum_synapses) and g2 < len(dad_synapses):
@@ -60,7 +61,7 @@ class GeneSplicer(object):
                         self.add_dad_neurons(g2, dad_neurons, junior_neurons, dad_synapses[g2])
                     g2 += 1
 
-        junior = {"id" : ControlPanel.next_organism_number(), "fitness": mum["fitness"], "neurons": [], "synapses": []}
+        junior = {"id": ControlPanel.next_organism_number(), "fitness": mum["fitness"], "neurons": [], "synapses": []}
 
         connections = set()
         for i, synapse in enumerate(junior_synapses):
@@ -73,7 +74,7 @@ class GeneSplicer(object):
         return junior
 
     def add_dad_neurons(self, g2, dad_neurons, junior_neurons, dad_synapses):
-        axons = filter(lambda n: n["label"] == dad_synapses["axon"], dad_neurons)
+        axons = filter(lambda n: n["label"] == dad_synapses["axon"] and n["label"][0] == "H", dad_neurons)
         if len(axons) > 0:
             junior_neurons[dad_synapses["axon"]] = axons[0]
         dendrites = filter(lambda n: n["label"] == dad_synapses["dendrite"], dad_neurons)
@@ -81,13 +82,12 @@ class GeneSplicer(object):
             junior_neurons[dad_synapses["dendrite"]] = dendrites[0]
 
     def mum_neurons(self, g1, junior_neurons, mum_neurons, mum_synapses):
-        axons = filter(lambda n: n["label"] == mum_synapses["axon"], mum_neurons)
+        axons = filter(lambda n: n["label"] == mum_synapses["axon"] and n["label"][0] == "H", mum_neurons)
         if len(axons) > 0:
             junior_neurons[mum_synapses["axon"]] = axons[0]
         dendrites = filter(lambda n: n["label"] == mum_synapses["dendrite"], mum_neurons)
         if len(dendrites) > 0:
             junior_neurons[mum_synapses["dendrite"]] = dendrites[0]
-
 
     def compatibility_scan(self, genome1, genome2):
         genes1 = genome1["synapses"]
@@ -98,7 +98,6 @@ class GeneSplicer(object):
         num_disjoint = 0
         num_matching = 0
         mutation_difference = 0
-        max_genome_size = max(len(genes1), len(genes2))
 
         while g1 < len(genes1) and g2 < len(genes2):
             if g1 >= len(genes2):
@@ -122,11 +121,8 @@ class GeneSplicer(object):
                     num_disjoint += 1
                     g2 += 1
 
-        return (DISJOINT_COEFF * (num_disjoint / max_genome_size) +
-                EXCESS_COEFF * (num_excess / max_genome_size)
-                + MUTATION_DIFF_COEFF * (mutation_difference / num_matching))
-
-
+        return (DISJOINT_COEFF * num_disjoint) + (EXCESS_COEFF * num_excess) \
+               + (MUTATION_DIFF_COEFF * (mutation_difference / num_matching))
 
     def mutate(self, junior):
         KRYPTONITE = 1
@@ -140,6 +136,20 @@ class GeneSplicer(object):
 
         elif random.random() < REENABLE_GENE_PROBABILITY:
             pass
+
+        elif random.random() < ADD_LINK_PROBABILITY:
+            neurons = junior["neurons"]
+            random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
+            random_neuron_2 = neurons[random.randint(0, len(neurons) - 1)]
+
+            link_exists = False
+            for synapse in junior["synapses"]:
+                if synapse["axon"] == random_neuron_1["label"] and synapse["dendrite"] == random_neuron_2["label"]:
+                    link_exists = True
+
+            if not link_exists and random_neuron_2["type"] not in ["Sensor", "Bias"] and not (
+                    random_neuron_1["type"] == "Hidden" and random_neuron_2["type"] == "Hidden"):
+                junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
 
         elif random.random() < ADD_NODE_PROBABILITY:
             synapse_genes = junior["synapses"]
@@ -155,19 +165,6 @@ class GeneSplicer(object):
                 junior["synapses"].append(self.new_synapse(old_axon, new_neuron["label"], 1))
                 junior["synapses"].append(self.new_synapse(new_neuron["label"], old_dendrite, random_gene["weight"]))
 
-        elif random.random() < ADD_LINK_PROBABILITY:
-            neurons = junior["neurons"]
-            random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
-            random_neuron_2 = neurons[random.randint(0, len(neurons) - 1)]
-
-            link_exists = False
-            for synapse in junior["synapses"]:
-                if synapse["axon"] == random_neuron_1["label"] and synapse["dendrite"] == random_neuron_2["label"]:
-                    link_exists = True
-
-            if not link_exists and random_neuron_1["type"] not in ["Output"] and random_neuron_2["type"] not in ["Sensor", "Bias"]:
-                junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
-
         elif random.random() < MUTATE_LINKS_PROBABILITY:
             tail_index = 0.8 * len(junior["synapses"])
             for index, synapse in enumerate(junior["synapses"]):
@@ -178,14 +175,12 @@ class GeneSplicer(object):
                 else:
                     synapse["weight"] += new_weight
 
-
     def new_neuron(self):
         next_innovation_number = ControlPanel.next_innovation_number()
         return {"innovation_number": next_innovation_number,
                 "label": "H%s" % next_innovation_number,
                 "type": HIDDEN
                 }
-
 
     def new_synapse(self, axon, dendrite, weight):
         next_innovation_number = ControlPanel.next_innovation_number()
