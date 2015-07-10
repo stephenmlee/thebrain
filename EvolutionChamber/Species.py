@@ -78,7 +78,7 @@ class Species(object):
                 junior = splicer.mate(mum, dad)
                 junior["reproduction"] = "Mate"
             else:
-                junior = copy.deepcopy(mum)
+                junior = mum
                 splicer.mutate(junior)
                 junior["reproduction"] = "Mutate"
 

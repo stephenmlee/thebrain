@@ -147,8 +147,9 @@ class GeneSplicer(object):
                 if synapse["axon"] == random_neuron_1["label"] and synapse["dendrite"] == random_neuron_2["label"]:
                     link_exists = True
 
-            if not link_exists and random_neuron_2["type"] not in ["Sensor", "Bias"] and not (
-                    random_neuron_1["type"] == "Hidden" and random_neuron_2["type"] == "Hidden"):
+            if not link_exists and random_neuron_2["type"] not in ["Sensor", "Bias"] \
+                    and (not (random_neuron_1["type"] == "Hidden" and random_neuron_2["type"] == "Hidden")
+                         or random_neuron_1["label"] == random_neuron_2["label"]):
                 junior["synapses"].append(self.new_synapse(random_neuron_1["label"], random_neuron_2["label"], 1))
 
         elif random.random() < ADD_NODE_PROBABILITY:
