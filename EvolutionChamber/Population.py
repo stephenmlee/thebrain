@@ -2,7 +2,7 @@ import copy
 import random
 import math
 from CommandBunker.ControlPanel import INITIAL_POPULATION_SIZE, WEIGHT_MUTATION_POWER, WEIGHT_MUTATION_TAIL_BOOST, \
-    COMPATIBILITY_THRESHOLD, AGE_DROPOFF_THRESHOLD
+    COMPATIBILITY_THRESHOLD, AGE_DROPOFF_THRESHOLD, next_organism_number
 from EvolutionChamber.GeneSplicer import GeneSplicer
 from EvolutionChamber.Species import Species
 
@@ -16,7 +16,7 @@ class Population(object):
 
         for count in range(1, INITIAL_POPULATION_SIZE):
             clone = copy.deepcopy(starting_genome)
-            clone["id"] = count
+            clone["id"] = next_organism_number()
             GeneSplicer().mutate(clone)
             self.organisms.append(clone)
 

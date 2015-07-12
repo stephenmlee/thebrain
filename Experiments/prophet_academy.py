@@ -124,11 +124,16 @@ if __name__ == "__main__":
 
                     if prediction > 0.75:
                         if money > 0:
-                            shares = money / ftse100_t2_p[index]
+                            # shares = money / ftse100_t2_p[index] # cheat!
+                            # shares = money * 0.995 / ftse100_t2_p[index] # cheat!
+                            shares = money * 0.995 / ftse100[index]
+
                             money = 0
                     elif prediction < 0.25:
                         if shares > 0:
-                            money = shares * ftse100_t2_p[index]
+                            # money = shares * ftse100_t2_p[index] # cheat!
+                            # money = shares * 0.995 * ftse100_t2_p[index] # cheat!
+                            money = shares * 0.995 * ftse100[index]
                             shares = 0
 
                 ending_balance = money if money > 0 else shares * ftse100[len(ftse100) - 1]
