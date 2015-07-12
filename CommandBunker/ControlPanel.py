@@ -1,6 +1,6 @@
 __author__ = 'stephen'
 
-innovation_number = 7
+innovation_number = 100
 organism_number = 1
 species_id = 0
 
@@ -11,7 +11,7 @@ RESET_WEIGHT_PROBABILITY = 0.05
 DISJOINT_COEFF = 1
 EXCESS_COEFF = 1
 MUTATION_DIFF_COEFF = 0.4
-COMPATIBILITY_THRESHOLD = 3
+COMPATIBILITY_THRESHOLD = 1.5
 AGE_DROPOFF_THRESHOLD = 50
 YOUNG_BOOST = 1
 SURVIVAL_RATE = 0.2
