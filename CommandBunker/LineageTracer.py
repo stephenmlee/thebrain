@@ -4,14 +4,14 @@ __author__ = 'stephen'
 
 
 def main():
-    target_id = 7899
-    generation = 39
+    target_id = 26378
+    generation = 186
 
-    experiment_archive = "Archive/xor/20150705 09:47:47/generation"
+    experiment_archive = "Archive/prophet/20150712 20:00:51"
     lineage = []
 
-    while generation >= 1:
-        historical_record = open("%s-%s.json" % (experiment_archive, generation), "r")
+    while generation > 1:
+        historical_record = open("%s/generation-%s.json" % (experiment_archive, generation), "r")
         genes = json.load(historical_record)
         historical_record.close()
 

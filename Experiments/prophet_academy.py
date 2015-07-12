@@ -8,7 +8,6 @@ from CommandBunker.ControlPanel import AGE_DROPOFF_THRESHOLD
 from Cranium import NeuralNetwork
 from Cranium.NeuralNetwork import UnstableNetworkError
 from EvolutionChamber.Population import Population
-import numpy
 
 __author__ = 'stephen'
 
@@ -34,11 +33,18 @@ def archive_population(population, generation):
     f.close()
 
 
-def normalize(timeseries):
+def std_normalize(timeseries):
     timeseries = copy.copy(timeseries)
     timeseries -= np.mean(timeseries, axis=0)
     timeseries /= np.std(timeseries, axis=0)
     return timeseries
+
+
+def min_max_normalize(timeseries):
+    result = []
+    for value in timeseries:
+        result.append((value-min(timeseries)) / (max(timeseries) - min(timeseries)))
+    return result
 
 
 if __name__ == "__main__":
@@ -49,7 +55,7 @@ if __name__ == "__main__":
     generation = 1
     last_improvement = 0
 
-    archive = "Experiments/Archive/xor/%s" % datetime.datetime.now().strftime("%Y%m%d %H:%M:%S")
+    archive = "Experiments/Archive/prophet/%s" % datetime.datetime.now().strftime("%Y%m%d %H:%M:%S")
     os.makedirs(archive)
     archive_population(population, generation)
 
@@ -63,8 +69,8 @@ if __name__ == "__main__":
         ftse100.append(float(quote["Close"]))
         volume.append(float(quote["Volume"]))
 
-    ftse100_n = normalize(ftse100)
-    volume_n = normalize(volume)
+    ftse100_n = min_max_normalize(ftse100)
+    volume_n = min_max_normalize(volume)
 
     ftse100_t1 = [ftse100_n[0]]
     ftse100_t1.extend(ftse100_n[:len(ftse100_n) - 1])

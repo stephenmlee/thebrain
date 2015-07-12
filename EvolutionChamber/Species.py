@@ -82,10 +82,10 @@ class Species(object):
                 splicer.mutate(junior)
                 junior["reproduction"] = "Mutate"
 
+            junior["parent"] = mum["id"]
             junior["id"] = ControlPanel.next_organism_number()
             junior["generation"] = generation
             junior["species"] = self.id
-            junior["parent"] = mum["id"]
             children.append(junior)
 
         mutants = []

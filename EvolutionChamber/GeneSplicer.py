@@ -134,9 +134,6 @@ class GeneSplicer(object):
             random_gene = synapse_genes[random.randint(0, len(synapse_genes) - 1)]
             random_gene["disabled"] = "true"
 
-        elif random.random() < REENABLE_GENE_PROBABILITY:
-            pass
-
         elif random.random() < ADD_LINK_PROBABILITY:
             neurons = junior["neurons"]
             random_neuron_1 = neurons[random.randint(0, len(neurons) - 1)]
@@ -159,7 +156,7 @@ class GeneSplicer(object):
             old_dendrite = random_gene["dendrite"]
             old_axon = random_gene["axon"]
 
-            if old_axon[:1] in ["S", "H"]:
+            if old_axon[:1] in ["S", "H"] and not (old_axon[:1] == "H" and old_dendrite[:1] == "H"):
                 random_gene["disabled"] = "true"
                 new_neuron = self.new_neuron()
                 junior["neurons"].append(new_neuron)
