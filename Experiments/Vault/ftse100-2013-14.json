@@ -1,75 +1,8 @@
 {
  "query": {
   "count": 257,
-  "created": "2015-07-10T19:57:27Z",
+  "created": "2015-07-19T19:38:43Z",
   "lang": "en-US",
-  "diagnostics": {
-   "url": [
-    {
-     "execution-start-time": "0",
-     "execution-stop-time": "63",
-     "execution-time": "63",
-     "content": "http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml"
-    },
-    {
-     "execution-start-time": "69",
-     "execution-stop-time": "2074",
-     "execution-time": "2005",
-     "content": "http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2013&d=5&f=2014&s=%5eFTSE"
-    },
-    {
-     "execution-start-time": "2079",
-     "execution-stop-time": "2226",
-     "execution-time": "147",
-     "content": "http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2013&d=5&f=2014&s=%5eFTSE"
-    }
-   ],
-   "publiclyCallable": "true",
-   "cache": [
-    {
-     "execution-start-time": "68",
-     "execution-stop-time": "68",
-     "execution-time": "0",
-     "method": "GET",
-     "type": "MEMCACHED",
-     "content": "17787f7471bc42bea8464fe15bf867a9"
-    },
-    {
-     "execution-start-time": "2078",
-     "execution-stop-time": "2078",
-     "execution-time": "0",
-     "method": "GET",
-     "type": "MEMCACHED",
-     "content": "2bfaa48062dbb2cf702bdd4a7ae84073"
-    }
-   ],
-   "query": [
-    {
-     "execution-start-time": "68",
-     "execution-stop-time": "2077",
-     "execution-time": "2009",
-     "params": "{url=[http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2013&d=5&f=2014&s=%5eFTSE]}",
-     "content": "select * from csv(0,1) where url=@url"
-    },
-    {
-     "execution-start-time": "2078",
-     "execution-stop-time": "2229",
-     "execution-time": "151",
-     "params": "{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2013&d=5&f=2014&s=%5eFTSE]}",
-     "content": "select * from csv(2,0) where url=@url and columns=@columnsNames"
-    }
-   ],
-   "javascript": {
-    "execution-start-time": "67",
-    "execution-stop-time": "3217",
-    "execution-time": "3150",
-    "instructions-used": "25165188",
-    "table-name": "yahoo.finance.historicaldata"
-   },
-   "user-time": "3223",
-   "service-time": "2215",
-   "build-version": "0.2.154"
-  },
   "results": {
    "quote": [
     {

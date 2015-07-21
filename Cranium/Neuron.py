@@ -38,6 +38,9 @@ class Neuron(object):
     def decode_genome(self):
         return {"innovation_number": self.innovation_number, "label": self.label, "type": self.type}
 
+    def _tanh(self, x):
+        return math.tanh(x)
+
     def _sigmoid(self, x):
         return 1 / (1 + math.exp(-4.924273 * x))
 

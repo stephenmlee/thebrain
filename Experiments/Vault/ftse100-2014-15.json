@@ -1,75 +1,8 @@
 {
  "query": {
-  "count": 254,
-  "created": "2015-07-10T19:55:35Z",
+  "count": 253,
+  "created": "2015-07-19T19:39:02Z",
   "lang": "en-US",
-  "diagnostics": {
-   "url": [
-    {
-     "execution-start-time": "0",
-     "execution-stop-time": "73",
-     "execution-time": "73",
-     "content": "http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml"
-    },
-    {
-     "execution-start-time": "79",
-     "execution-stop-time": "440",
-     "execution-time": "361",
-     "content": "http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2014&d=5&f=2015&s=%5eFTSE"
-    },
-    {
-     "execution-start-time": "445",
-     "execution-stop-time": "678",
-     "execution-time": "233",
-     "content": "http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2014&d=5&f=2015&s=%5eFTSE"
-    }
-   ],
-   "publiclyCallable": "true",
-   "cache": [
-    {
-     "execution-start-time": "78",
-     "execution-stop-time": "78",
-     "execution-time": "0",
-     "method": "GET",
-     "type": "MEMCACHED",
-     "content": "0be2c956207d8742f7ff745f341e455b"
-    },
-    {
-     "execution-start-time": "444",
-     "execution-stop-time": "445",
-     "execution-time": "1",
-     "method": "GET",
-     "type": "MEMCACHED",
-     "content": "4969b075fcdad99c0c34c359b0961dc2"
-    }
-   ],
-   "query": [
-    {
-     "execution-start-time": "78",
-     "execution-stop-time": "444",
-     "execution-time": "366",
-     "params": "{url=[http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2014&d=5&f=2015&s=%5eFTSE]}",
-     "content": "select * from csv(0,1) where url=@url"
-    },
-    {
-     "execution-start-time": "445",
-     "execution-stop-time": "680",
-     "execution-time": "235",
-     "params": "{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?a=5&b=30&e=30&g=d&c=2014&d=5&f=2015&s=%5eFTSE]}",
-     "content": "select * from csv(2,0) where url=@url and columns=@columnsNames"
-    }
-   ],
-   "javascript": {
-    "execution-start-time": "77",
-    "execution-stop-time": "1362",
-    "execution-time": "1285",
-    "instructions-used": "24585817",
-    "table-name": "yahoo.finance.historicaldata"
-   },
-   "user-time": "1368",
-   "service-time": "668",
-   "build-version": "0.2.154"
-  },
   "results": {
    "quote": [
     {
@@ -2601,16 +2534,6 @@
      "Close": "6802.899902",
      "Volume": "514345100",
      "Adj_Close": "6802.899902"
-    },
-    {
-     "Symbol": "%5eFTSE",
-     "Date": "2014-06-30",
-     "Open": "6757.799805",
-     "High": "6777.100098",
-     "Low": "6730.50",
-     "Close": "6743.899902",
-     "Volume": "614336500",
-     "Adj_Close": "6743.899902"
     }
    ]
   }

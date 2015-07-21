@@ -4,10 +4,10 @@ __author__ = 'stephen'
 
 
 def main():
-    target_id = 26378
-    generation = 186
+    target_id = 10942
+    generation = 156
 
-    experiment_archive = "Archive/prophet/20150712 20:00:51"
+    experiment_archive = "Archive/prophet/20150712 23:07:26"
     lineage = []
 
     while generation > 1:
